@@ -1,0 +1,44 @@
+\hypertarget{interface_g_a_i_tracked_view_controller}{}\section{G\+A\+I\+Tracked\+View\+Controller Class Reference}
+\label{interface_g_a_i_tracked_view_controller}\index{G\+A\+I\+Tracked\+View\+Controller@{G\+A\+I\+Tracked\+View\+Controller}}
+
+
+{\ttfamily \#import $<$G\+A\+I\+Tracked\+View\+Controller.\+h$>$}
+
+Inheritance diagram for G\+A\+I\+Tracked\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_i_tracked_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} $>$ \hyperlink{interface_g_a_i_tracked_view_controller_aada15f00d99216066e81fb4328496179}{tracker}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_g_a_i_tracked_view_controller_ac5605ccd95a6ac6076383eac9b1b7500}{screen\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extends U\+I\+View\+Controller to generate Google Analytics screenview calls whenever the view appears; this is done by overriding the {\ttfamily view\+Did\+Appear\+:} method. The screen name must be set for any tracking calls to be made.
+
+By default, this will use \mbox{[}\hyperlink{interface_g_a_i}{G\+AI} default\+Tracker\mbox{]} for tracking calls, but one can override this by setting the tracker property. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_g_a_i_tracked_view_controller_ac5605ccd95a6ac6076383eac9b1b7500}\label{interface_g_a_i_tracked_view_controller_ac5605ccd95a6ac6076383eac9b1b7500}} 
+\index{G\+A\+I\+Tracked\+View\+Controller@{G\+A\+I\+Tracked\+View\+Controller}!screen\+Name@{screen\+Name}}
+\index{screen\+Name@{screen\+Name}!G\+A\+I\+Tracked\+View\+Controller@{G\+A\+I\+Tracked\+View\+Controller}}
+\subsubsection{\texorpdfstring{screen\+Name}{screenName}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) screen\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The screen name, for purposes of Google Analytics tracking. If this is {\ttfamily nil}, no tracking calls will be made. \mbox{\Hypertarget{interface_g_a_i_tracked_view_controller_aada15f00d99216066e81fb4328496179}\label{interface_g_a_i_tracked_view_controller_aada15f00d99216066e81fb4328496179}} 
+\index{G\+A\+I\+Tracked\+View\+Controller@{G\+A\+I\+Tracked\+View\+Controller}!tracker@{tracker}}
+\index{tracker@{tracker}!G\+A\+I\+Tracked\+View\+Controller@{G\+A\+I\+Tracked\+View\+Controller}}
+\subsubsection{\texorpdfstring{tracker}{tracker}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker}$>$) tracker\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The tracker on which view tracking calls are be made, or {\ttfamily nil}, in which case \mbox{[}\hyperlink{interface_g_a_i}{G\+AI} default\+Tracker\mbox{]} will be used. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_tracked_view_controller_8h}{G\+A\+I\+Tracked\+View\+Controller.\+h}\end{DoxyCompactItemize}

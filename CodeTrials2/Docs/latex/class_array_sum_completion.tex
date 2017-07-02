@@ -1,0 +1,172 @@
+\hypertarget{class_array_sum_completion}{}\section{Array\+Sum\+Completion Class Reference}
+\label{class_array_sum_completion}\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+Inheritance diagram for Array\+Sum\+Completion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_array_sum_completion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_array_sum_completion_a7ebbac41382a93bf539032555a3c9bd9}{reset\+Puzzle} ()
+\item 
+void \hyperlink{class_array_sum_completion_a3ae23072215cde0cdce19c8f8b773b7b}{reset\+Check\+Values} ()
+\item 
+void \hyperlink{class_array_sum_completion_ac1c819eeab2598e8c2c2e1e78e15a666}{drop\+Tile\+Platforms} ()
+\item 
+void \hyperlink{class_array_sum_completion_a033797d55e28346be6d4821f3bdc2daa}{reset\+Slots} ()
+\begin{DoxyCompactList}\small\item\em reset slots to empty \end{DoxyCompactList}\item 
+void \hyperlink{class_array_sum_completion_a9219153273ef00f35c1ccb98cf408af3}{reset\+Tiles} ()
+\begin{DoxyCompactList}\small\item\em reset tiles to active and in original position \end{DoxyCompactList}\item 
+void \hyperlink{class_array_sum_completion_a9c8cbe4d07015cd0e6c958e39e0e92d2}{reset\+Active} ()
+\begin{DoxyCompactList}\small\item\em Resets all of the tiles to be active when resetting. \end{DoxyCompactList}\item 
+void \hyperlink{class_array_sum_completion_a1289c469259345582c0227f7a617a19f}{reset\+Boxes\+And\+Platforms} ()
+\begin{DoxyCompactList}\small\item\em Places the boxes and their platforms back at the starting postions to be used again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_array_reaction}{Array\+Reaction} \hyperlink{class_array_sum_completion_ac76237e402fcc0e49a59a6e87c5def61}{check\+One}
+\begin{DoxyCompactList}\small\item\em The slots that will be checked \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_array_sum_completion_aede79dd24168cb27103df95c78a78abf}{rising\+Platform}
+\begin{DoxyCompactList}\small\item\em rising counter-\/weight platform \end{DoxyCompactList}\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \hyperlink{class_array_sum_completion_a18c8b02ee9ab7e991e7e49e97540794b}{array\+Tiles}
+\begin{DoxyCompactList}\small\item\em the tiles that will be dragged \end{DoxyCompactList}\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \hyperlink{class_array_sum_completion_a51878c1ec6f821a4d7adff431b4143d1}{replacement\+Tiles}
+\begin{DoxyCompactList}\small\item\em The replacement tiles that go into the slots \end{DoxyCompactList}\item 
+List$<$ Vector3 $>$ \hyperlink{class_array_sum_completion_a48661584c0748edee316371617b45b5d}{array\+Tile\+Positions}
+\begin{DoxyCompactList}\small\item\em their positions, used for resetting challenge \end{DoxyCompactList}\item 
+bool \hyperlink{class_array_sum_completion_acbefffe0c43bbd4cd21cfcf34e0a9b7c}{puzzle\+Finished}
+\begin{DoxyCompactList}\small\item\em Bools to detect if the puzzle is done and the camera was toggled. Used in resetting and toggling of the camera \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Checks the respective challenge and makes changes to the game if the user is correct or not Challenge\+: Array challenge 2 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_array_sum_completion_ac1c819eeab2598e8c2c2e1e78e15a666}\label{class_array_sum_completion_ac1c819eeab2598e8c2c2e1e78e15a666}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!drop\+Tile\+Platforms@{drop\+Tile\+Platforms}}
+\index{drop\+Tile\+Platforms@{drop\+Tile\+Platforms}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{drop\+Tile\+Platforms()}{dropTilePlatforms()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+drop\+Tile\+Platforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calls each Box\textquotesingle{}s method to let them fall for the weight challenge \mbox{\Hypertarget{class_array_sum_completion_a9c8cbe4d07015cd0e6c958e39e0e92d2}\label{class_array_sum_completion_a9c8cbe4d07015cd0e6c958e39e0e92d2}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!reset\+Active@{reset\+Active}}
+\index{reset\+Active@{reset\+Active}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{reset\+Active()}{resetActive()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+reset\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets all of the tiles to be active when resetting. 
+
+\mbox{\Hypertarget{class_array_sum_completion_a1289c469259345582c0227f7a617a19f}\label{class_array_sum_completion_a1289c469259345582c0227f7a617a19f}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!reset\+Boxes\+And\+Platforms@{reset\+Boxes\+And\+Platforms}}
+\index{reset\+Boxes\+And\+Platforms@{reset\+Boxes\+And\+Platforms}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{reset\+Boxes\+And\+Platforms()}{resetBoxesAndPlatforms()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+reset\+Boxes\+And\+Platforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Places the boxes and their platforms back at the starting postions to be used again. 
+
+\mbox{\Hypertarget{class_array_sum_completion_a3ae23072215cde0cdce19c8f8b773b7b}\label{class_array_sum_completion_a3ae23072215cde0cdce19c8f8b773b7b}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!reset\+Check\+Values@{reset\+Check\+Values}}
+\index{reset\+Check\+Values@{reset\+Check\+Values}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{reset\+Check\+Values()}{resetCheckValues()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+reset\+Check\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the slot\textquotesingle{}s success bools so they can be used again \mbox{\Hypertarget{class_array_sum_completion_a7ebbac41382a93bf539032555a3c9bd9}\label{class_array_sum_completion_a7ebbac41382a93bf539032555a3c9bd9}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!reset\+Puzzle@{reset\+Puzzle}}
+\index{reset\+Puzzle@{reset\+Puzzle}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{reset\+Puzzle()}{resetPuzzle()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+reset\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the puzzle Resets the Tiles, slots, check values, camera flag and error message \mbox{\Hypertarget{class_array_sum_completion_a033797d55e28346be6d4821f3bdc2daa}\label{class_array_sum_completion_a033797d55e28346be6d4821f3bdc2daa}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!reset\+Slots@{reset\+Slots}}
+\index{reset\+Slots@{reset\+Slots}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{reset\+Slots()}{resetSlots()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+reset\+Slots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset slots to empty 
+
+\mbox{\Hypertarget{class_array_sum_completion_a9219153273ef00f35c1ccb98cf408af3}\label{class_array_sum_completion_a9219153273ef00f35c1ccb98cf408af3}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!reset\+Tiles@{reset\+Tiles}}
+\index{reset\+Tiles@{reset\+Tiles}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{reset\+Tiles()}{resetTiles()}}
+{\footnotesize\ttfamily void Array\+Sum\+Completion.\+reset\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset tiles to active and in original position 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_array_sum_completion_a48661584c0748edee316371617b45b5d}\label{class_array_sum_completion_a48661584c0748edee316371617b45b5d}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!array\+Tile\+Positions@{array\+Tile\+Positions}}
+\index{array\+Tile\+Positions@{array\+Tile\+Positions}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{array\+Tile\+Positions}{arrayTilePositions}}
+{\footnotesize\ttfamily List$<$Vector3$>$ Array\+Sum\+Completion.\+array\+Tile\+Positions}
+
+
+
+their positions, used for resetting challenge 
+
+\mbox{\Hypertarget{class_array_sum_completion_a18c8b02ee9ab7e991e7e49e97540794b}\label{class_array_sum_completion_a18c8b02ee9ab7e991e7e49e97540794b}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!array\+Tiles@{array\+Tiles}}
+\index{array\+Tiles@{array\+Tiles}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{array\+Tiles}{arrayTiles}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Array\+Sum\+Completion.\+array\+Tiles}
+
+
+
+the tiles that will be dragged 
+
+\mbox{\Hypertarget{class_array_sum_completion_ac76237e402fcc0e49a59a6e87c5def61}\label{class_array_sum_completion_ac76237e402fcc0e49a59a6e87c5def61}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!check\+One@{check\+One}}
+\index{check\+One@{check\+One}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{check\+One}{checkOne}}
+{\footnotesize\ttfamily \hyperlink{class_array_reaction}{Array\+Reaction} Array\+Sum\+Completion.\+check\+One}
+
+
+
+The slots that will be checked 
+
+\mbox{\Hypertarget{class_array_sum_completion_acbefffe0c43bbd4cd21cfcf34e0a9b7c}\label{class_array_sum_completion_acbefffe0c43bbd4cd21cfcf34e0a9b7c}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!puzzle\+Finished@{puzzle\+Finished}}
+\index{puzzle\+Finished@{puzzle\+Finished}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{puzzle\+Finished}{puzzleFinished}}
+{\footnotesize\ttfamily bool Array\+Sum\+Completion.\+puzzle\+Finished}
+
+
+
+Bools to detect if the puzzle is done and the camera was toggled. Used in resetting and toggling of the camera 
+
+\mbox{\Hypertarget{class_array_sum_completion_a51878c1ec6f821a4d7adff431b4143d1}\label{class_array_sum_completion_a51878c1ec6f821a4d7adff431b4143d1}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!replacement\+Tiles@{replacement\+Tiles}}
+\index{replacement\+Tiles@{replacement\+Tiles}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{replacement\+Tiles}{replacementTiles}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Array\+Sum\+Completion.\+replacement\+Tiles}
+
+
+
+The replacement tiles that go into the slots 
+
+\mbox{\Hypertarget{class_array_sum_completion_aede79dd24168cb27103df95c78a78abf}\label{class_array_sum_completion_aede79dd24168cb27103df95c78a78abf}} 
+\index{Array\+Sum\+Completion@{Array\+Sum\+Completion}!rising\+Platform@{rising\+Platform}}
+\index{rising\+Platform@{rising\+Platform}!Array\+Sum\+Completion@{Array\+Sum\+Completion}}
+\subsubsection{\texorpdfstring{rising\+Platform}{risingPlatform}}
+{\footnotesize\ttfamily Game\+Object Array\+Sum\+Completion.\+rising\+Platform}
+
+
+
+rising counter-\/weight platform 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Scripts/\+Puzzle\+Logic/\+Array\+Sumation\+Puzzle/\hyperlink{_array_sum_completion_8cs}{Array\+Sum\+Completion.\+cs}\end{DoxyCompactItemize}

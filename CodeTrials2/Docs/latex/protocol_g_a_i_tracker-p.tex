@@ -1,0 +1,101 @@
+\hypertarget{protocol_g_a_i_tracker-p}{}\section{$<$G\+A\+I\+Tracker$>$ Protocol Reference}
+\label{protocol_g_a_i_tracker-p}\index{$<$\+G\+A\+I\+Tracker$>$@{$<$\+G\+A\+I\+Tracker$>$}}
+
+
+{\ttfamily \#import $<$G\+A\+I\+Tracker.\+h$>$}
+
+Inheritance diagram for $<$G\+A\+I\+Tracker$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_g_a_i_tracker-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_g_a_i_tracker-p_aa96612a73d5adf1e0092246de248716e}{set\+:value\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{protocol_g_a_i_tracker-p_aa5fb31f74edfc74533cd3f6a12f7bb46}{get\+:}
+\item 
+(void) -\/ \hyperlink{protocol_g_a_i_tracker-p_ae200c9432a91242cf4e1e4917f353c14}{send\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{protocol_g_a_i_tracker-p_a83fe089d882610176701a2f77e884d3c}{name}
+\item 
+B\+O\+OL \hyperlink{protocol_g_a_i_tracker-p_a0743d4e30b788e75ea3662b64f211153}{allow\+I\+D\+F\+A\+Collection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{_g_a_i_tracker_8h}{G\+A\+I\+Tracker.\+h}  Google Analytics i\+OS S\+DK Tracker Header \begin{DoxyCopyright}{Copyright}
+Copyright 2013 Google Inc. All rights reserved.
+\end{DoxyCopyright}
+Google Analytics tracking interface. Obtain instances of this interface from \mbox{[}\hyperlink{interface_g_a_i}{G\+AI} tracker\+With\+Tracking\+Id\+:\mbox{]} to track screens, events, transactions, timing, and exceptions. The implementation of this interface is thread-\/safe, and no calls are expected to block or take a long time. All network and disk activity will take place in the background. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_g_a_i_tracker-p_aa5fb31f74edfc74533cd3f6a12f7bb46}\label{protocol_g_a_i_tracker-p_aa5fb31f74edfc74533cd3f6a12f7bb46}} 
+\index{G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}!get\+:@{get\+:}}
+\index{get\+:@{get\+:}!G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}}
+\subsubsection{\texorpdfstring{get\+:()}{get:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) get\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{parameter\+Name }\end{DoxyParamCaption}}
+
+Get a tracking parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & The parameter name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter value, or nil if no value for the given parameter is set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_g_a_i_tracker-p_ae200c9432a91242cf4e1e4917f353c14}\label{protocol_g_a_i_tracker-p_ae200c9432a91242cf4e1e4917f353c14}} 
+\index{G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}!send\+:@{send\+:}}
+\index{send\+:@{send\+:}!G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}}
+\subsubsection{\texorpdfstring{send\+:()}{send:()}}
+{\footnotesize\ttfamily -\/ (void) send\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$)}]{parameters }\end{DoxyParamCaption}}
+
+Queue tracking information with the given parameter values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & A map from parameter names to parameter values which will be set just for this piece of tracking information, or nil for none. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_g_a_i_tracker-p_aa96612a73d5adf1e0092246de248716e}\label{protocol_g_a_i_tracker-p_aa96612a73d5adf1e0092246de248716e}} 
+\index{G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}!set\+:value\+:@{set\+:value\+:}}
+\index{set\+:value\+:@{set\+:value\+:}!G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}}
+\subsubsection{\texorpdfstring{set\+:value\+:()}{set:value:()}}
+{\footnotesize\ttfamily -\/ (void) set\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{parameter\+Name }\item[{value:(N\+S\+String $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Set a tracking parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Name} & The parameter name.\\
+\hline
+{\em value} & The value to set for the parameter. If this is nil, the value for the parameter will be cleared. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{protocol_g_a_i_tracker-p_a0743d4e30b788e75ea3662b64f211153}\label{protocol_g_a_i_tracker-p_a0743d4e30b788e75ea3662b64f211153}} 
+\index{G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}!allow\+I\+D\+F\+A\+Collection@{allow\+I\+D\+F\+A\+Collection}}
+\index{allow\+I\+D\+F\+A\+Collection@{allow\+I\+D\+F\+A\+Collection}!G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}}
+\subsubsection{\texorpdfstring{allow\+I\+D\+F\+A\+Collection}{allowIDFACollection}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) allow\+I\+D\+F\+A\+Collection\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Allow collection of I\+D\+FA and related fields if set to true. Default is false. \mbox{\Hypertarget{protocol_g_a_i_tracker-p_a83fe089d882610176701a2f77e884d3c}\label{protocol_g_a_i_tracker-p_a83fe089d882610176701a2f77e884d3c}} 
+\index{G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}!name@{name}}
+\index{name@{name}!G\+A\+I\+Tracker-\/p@{G\+A\+I\+Tracker-\/p}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Name of this tracker. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_tracker_8h}{G\+A\+I\+Tracker.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{interface_g_a_i_ecommerce_promotion}{}\section{G\+A\+I\+Ecommerce\+Promotion Class Reference}
+\label{interface_g_a_i_ecommerce_promotion}\index{G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}}
+
+
+{\ttfamily \#import $<$G\+A\+I\+Ecommerce\+Promotion.\+h$>$}
+
+Inheritance diagram for G\+A\+I\+Ecommerce\+Promotion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_i_ecommerce_promotion}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_promotion_a2fefc7d8bee1f757c3e557678c409fcf}{set\+Id\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_promotion_af4f2977a6b4cacb60af22f2ded88ec5c}{set\+Name\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_promotion_aec0c45811511765ec3a1dbd2c50bc91c}{set\+Creative\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_promotion_a4c5b7f359ac00a6f2438fb40bd98cc30}{set\+Position\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_promotion_a284b242448537df1f38fea7f8833f057}{build\+With\+Index\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{_g_a_i_ecommerce_promotion_8h}{G\+A\+I\+Ecommerce\+Promotion.\+h}  Google Analytics i\+OS S\+DK Hit Format Header \begin{DoxyCopyright}{Copyright}
+Copyright 2014 Google Inc. All rights reserved.
+\end{DoxyCopyright}
+Class to construct promotion related fields for Google Analytics hits. The fields from this class can be used to represent internal promotions that run within an app, such as banners, banner ads etc.
+
+Typical usage\+: {\ttfamily  \hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder} $\ast$builder = \mbox{[}\hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder} create\+Screen\+View\mbox{]}; \hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$promotion = \mbox{[}\mbox{[}\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} alloc\mbox{]} init\mbox{]}; \mbox{[}promotion set\+Id\+:"P\+R\+O\+M\+O-\/\+I\+D1234\char`\"{}\mbox{]};
+\mbox{[}promotion set\+Name\+:@\char`\"{}Home screen banner"\mbox{]}; \mbox{[}builder set\+:k\+G\+A\+I\+Promotion\+Click for\+Key\+:k\+G\+A\+I\+Promotion\+Action\mbox{]}; \mbox{[}builder add\+Promotion\+:promotion\mbox{]}; \mbox{[}tracker send\+:builder.\+build\mbox{]}\mbox{]}; } 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_g_a_i_ecommerce_promotion_a284b242448537df1f38fea7f8833f057}\label{interface_g_a_i_ecommerce_promotion_a284b242448537df1f38fea7f8833f057}} 
+\index{G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}!build\+With\+Index\+:@{build\+With\+Index\+:}}
+\index{build\+With\+Index\+:@{build\+With\+Index\+:}!G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}}
+\subsubsection{\texorpdfstring{build\+With\+Index\+:()}{buildWithIndex:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) build\+With\+Index\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{index }\end{DoxyParamCaption}}
+
+Builds an N\+S\+Dictionary of fields stored in this instance. The index parameter is the index of this promotion in that promotion list. ~\newline
+ Normally, users will have no need to call this method. \mbox{\Hypertarget{interface_g_a_i_ecommerce_promotion_aec0c45811511765ec3a1dbd2c50bc91c}\label{interface_g_a_i_ecommerce_promotion_aec0c45811511765ec3a1dbd2c50bc91c}} 
+\index{G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}!set\+Creative\+:@{set\+Creative\+:}}
+\index{set\+Creative\+:@{set\+Creative\+:}!G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}}
+\subsubsection{\texorpdfstring{set\+Creative\+:()}{setCreative:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) set\+Creative\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{creative }\end{DoxyParamCaption}}
+
+Sets the name of the creative associated with the promotion. \mbox{\Hypertarget{interface_g_a_i_ecommerce_promotion_a2fefc7d8bee1f757c3e557678c409fcf}\label{interface_g_a_i_ecommerce_promotion_a2fefc7d8bee1f757c3e557678c409fcf}} 
+\index{G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}!set\+Id\+:@{set\+Id\+:}}
+\index{set\+Id\+:@{set\+Id\+:}!G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}}
+\subsubsection{\texorpdfstring{set\+Id\+:()}{setId:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) set\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{pid }\end{DoxyParamCaption}}
+
+Sets the id that is used to identify a promotion in GA reports. \mbox{\Hypertarget{interface_g_a_i_ecommerce_promotion_af4f2977a6b4cacb60af22f2ded88ec5c}\label{interface_g_a_i_ecommerce_promotion_af4f2977a6b4cacb60af22f2ded88ec5c}} 
+\index{G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}!set\+Name\+:@{set\+Name\+:}}
+\index{set\+Name\+:@{set\+Name\+:}!G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}}
+\subsubsection{\texorpdfstring{set\+Name\+:()}{setName:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) set\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+Sets the name that is used to identify a promotion in GA reports. \mbox{\Hypertarget{interface_g_a_i_ecommerce_promotion_a4c5b7f359ac00a6f2438fb40bd98cc30}\label{interface_g_a_i_ecommerce_promotion_a4c5b7f359ac00a6f2438fb40bd98cc30}} 
+\index{G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}!set\+Position\+:@{set\+Position\+:}}
+\index{set\+Position\+:@{set\+Position\+:}!G\+A\+I\+Ecommerce\+Promotion@{G\+A\+I\+Ecommerce\+Promotion}}
+\subsubsection{\texorpdfstring{set\+Position\+:()}{setPosition:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_promotion}{G\+A\+I\+Ecommerce\+Promotion} $\ast$) set\+Position\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{position }\end{DoxyParamCaption}}
+
+Sets the position of the promotion. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_ecommerce_promotion_8h}{G\+A\+I\+Ecommerce\+Promotion.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var class_hit_builder =
+[
+    [ "GetCampaignContent", "class_hit_builder.html#a6d424401864e382a172b8c774fd7e466", null ],
+    [ "GetCampaignID", "class_hit_builder.html#aaf708a2c92535d81c8a5c04f979e00a7", null ],
+    [ "GetCampaignKeyword", "class_hit_builder.html#a9203f40c77a69afbe914b0d0bab731f1", null ],
+    [ "GetCampaignMedium", "class_hit_builder.html#aca044ca6b6f99a4d871344bbcded1b4c", null ],
+    [ "GetCampaignName", "class_hit_builder.html#a610c6edc4b4597a15c4ff40d13d18c2c", null ],
+    [ "GetCampaignSource", "class_hit_builder.html#a8b94ce3ef09ac40269d204f6db5f7eeb", null ],
+    [ "GetCustomDimensions", "class_hit_builder.html#a72ab75920631300d1042354eff9827f5", null ],
+    [ "GetCustomMetrics", "class_hit_builder.html#aaca7cbe18c9a1f6a67674f87a280a284", null ],
+    [ "GetDclid", "class_hit_builder.html#aa6bfa35c9084719f372002d2762aca39", null ],
+    [ "GetGclid", "class_hit_builder.html#aed45644b41067f6c82655f127b4edd8e", null ],
+    [ "GetThis", "class_hit_builder.html#a4276c57427406e264dc33f8c900ad530", null ],
+    [ "SetCampaignContent", "class_hit_builder.html#afae82d6b7728f406b6ae074d804f6877", null ],
+    [ "SetCampaignID", "class_hit_builder.html#a769c78dab9c56eb9aece4bd2388c019f", null ],
+    [ "SetCampaignKeyword", "class_hit_builder.html#a2af536899c9cfabd3dfb6264d5820390", null ],
+    [ "SetCampaignMedium", "class_hit_builder.html#a6057460657162ac72cc0412a218c6018", null ],
+    [ "SetCampaignName", "class_hit_builder.html#a5079f79a4c1758aa82b85786d9600e1b", null ],
+    [ "SetCampaignSource", "class_hit_builder.html#acd475a4aaf0249b408d80fa454f27a52", null ],
+    [ "SetCustomDimension", "class_hit_builder.html#a142d3073dedfb4b0d8dd9d44ddc22d30", null ],
+    [ "SetCustomMetric", "class_hit_builder.html#a400ca3be59a49d15453cab6fdc8e0c91", null ],
+    [ "SetDclid", "class_hit_builder.html#a80be85c68138279996d755db2f2e0416", null ],
+    [ "SetGclid", "class_hit_builder.html#a2955d4278dea7ae27067f1b7ec053e77", null ],
+    [ "Validate", "class_hit_builder.html#a0f4833828bd530bb057c9ca359584bce", null ]
+];

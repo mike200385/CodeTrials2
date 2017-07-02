@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PuzzleLogic/ArithmeticPuzzle/ArithCompletionCheck.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MenuNavScripts/GameButtons.cs" Line="13" Column="41" />
+      <File FileName="Assets/Scripts/PersistantData/GlobalController.cs" Line="119" Column="16" />
+      <File FileName="Assets/EnterName.cs" Line="27" Column="3" />
+      <File FileName="Assets/SaveName.cs" Line="25" Column="16" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="65" Column="1" />
+      <File FileName="Assets/Scripts/levelCompleteArith.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/PuzzleLogic/ArithmeticPuzzle/ArithCompletionCheck.cs" Line="38" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

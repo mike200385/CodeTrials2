@@ -1,0 +1,93 @@
+\hypertarget{_g_a_i_8h}{}\section{/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\+G\+AI.h File Reference}
+\label{_g_a_i_8h}\index{/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\+G\+A\+I.\+h@{/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\+G\+A\+I.\+h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import \char`\"{}G\+A\+I\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}G\+A\+I\+Tracked\+View\+Controller.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}G\+A\+I\+Tracker.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_g_a_i}{G\+AI}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeede}{G\+A\+I\+Error\+Code} \{ \hyperlink{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea57aeda88d73f42e59b2d9a7baaec5f4d}{k\+G\+A\+I\+No\+Error} = 0, 
+\hyperlink{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea26f8e502e6ccb7b74f8e6a79ced8852f}{k\+G\+A\+I\+Database\+Error}, 
+\hyperlink{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea349d8c4aa91994e2190fb04eeb1e480b}{k\+G\+A\+I\+Network\+Error}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_g_a_i_8h_ab48c426b0af651a0bbd336e2f08531bd}{N\+S\+\_\+\+E\+N\+UM} (N\+S\+U\+Integer, G\+A\+I\+Dispatch\+Result)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$const \hyperlink{_g_a_i_8h_a2f16be7751eb70c74e9b6f423e469681}{k\+G\+A\+I\+Product}
+\item 
+N\+S\+String $\ast$const \hyperlink{_g_a_i_8h_ae488a4d809a766cfc0600452fe100707}{k\+G\+A\+I\+Version}
+\item 
+N\+S\+String $\ast$const \hyperlink{_g_a_i_8h_acf33032f98e95b1a48a7081451fe3644}{k\+G\+A\+I\+Error\+Domain}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeede}\label{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeede}} 
+\index{G\+A\+I.\+h@{G\+A\+I.\+h}!G\+A\+I\+Error\+Code@{G\+A\+I\+Error\+Code}}
+\index{G\+A\+I\+Error\+Code@{G\+A\+I\+Error\+Code}!G\+A\+I.\+h@{G\+A\+I.\+h}}
+\subsubsection{\texorpdfstring{G\+A\+I\+Error\+Code}{GAIErrorCode}}
+{\footnotesize\ttfamily enum \hyperlink{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeede}{G\+A\+I\+Error\+Code}}
+
+Google Analytics error codes. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+G\+A\+I\+No\+Error@{k\+G\+A\+I\+No\+Error}!G\+A\+I.\+h@{G\+A\+I.\+h}}\index{G\+A\+I.\+h@{G\+A\+I.\+h}!k\+G\+A\+I\+No\+Error@{k\+G\+A\+I\+No\+Error}}}\mbox{\Hypertarget{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea57aeda88d73f42e59b2d9a7baaec5f4d}\label{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea57aeda88d73f42e59b2d9a7baaec5f4d}} 
+k\+G\+A\+I\+No\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+G\+A\+I\+Database\+Error@{k\+G\+A\+I\+Database\+Error}!G\+A\+I.\+h@{G\+A\+I.\+h}}\index{G\+A\+I.\+h@{G\+A\+I.\+h}!k\+G\+A\+I\+Database\+Error@{k\+G\+A\+I\+Database\+Error}}}\mbox{\Hypertarget{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea26f8e502e6ccb7b74f8e6a79ced8852f}\label{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea26f8e502e6ccb7b74f8e6a79ced8852f}} 
+k\+G\+A\+I\+Database\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+G\+A\+I\+Network\+Error@{k\+G\+A\+I\+Network\+Error}!G\+A\+I.\+h@{G\+A\+I.\+h}}\index{G\+A\+I.\+h@{G\+A\+I.\+h}!k\+G\+A\+I\+Network\+Error@{k\+G\+A\+I\+Network\+Error}}}\mbox{\Hypertarget{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea349d8c4aa91994e2190fb04eeb1e480b}\label{_g_a_i_8h_ab7e54527c66f0d8672d6d82f68eeeedea349d8c4aa91994e2190fb04eeb1e480b}} 
+k\+G\+A\+I\+Network\+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_g_a_i_8h_ab48c426b0af651a0bbd336e2f08531bd}\label{_g_a_i_8h_ab48c426b0af651a0bbd336e2f08531bd}} 
+\index{G\+A\+I.\+h@{G\+A\+I.\+h}!N\+S\+\_\+\+E\+N\+UM@{N\+S\+\_\+\+E\+N\+UM}}
+\index{N\+S\+\_\+\+E\+N\+UM@{N\+S\+\_\+\+E\+N\+UM}!G\+A\+I.\+h@{G\+A\+I.\+h}}
+\subsubsection{\texorpdfstring{N\+S\+\_\+\+E\+N\+U\+M()}{NS\_ENUM()}}
+{\footnotesize\ttfamily typedef N\+S\+\_\+\+E\+N\+UM (\begin{DoxyParamCaption}\item[{N\+S\+U\+Integer}]{,  }\item[{G\+A\+I\+Dispatch\+Result}]{ }\end{DoxyParamCaption})}
+
+\hyperlink{_g_a_i_8h}{G\+A\+I.\+h}  Google Analytics i\+OS S\+DK Header \begin{DoxyVersion}{Version}
+3.\+13 
+\end{DoxyVersion}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2015 Google Inc. All rights reserved. 
+\end{DoxyCopyright}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_g_a_i_8h_acf33032f98e95b1a48a7081451fe3644}\label{_g_a_i_8h_acf33032f98e95b1a48a7081451fe3644}} 
+\index{G\+A\+I.\+h@{G\+A\+I.\+h}!k\+G\+A\+I\+Error\+Domain@{k\+G\+A\+I\+Error\+Domain}}
+\index{k\+G\+A\+I\+Error\+Domain@{k\+G\+A\+I\+Error\+Domain}!G\+A\+I.\+h@{G\+A\+I.\+h}}
+\subsubsection{\texorpdfstring{k\+G\+A\+I\+Error\+Domain}{kGAIErrorDomain}}
+{\footnotesize\ttfamily N\+S\+String$\ast$ const k\+G\+A\+I\+Error\+Domain}
+
+N\+S\+Error objects returned by the Google Analytics S\+DK may have this error domain to indicate that the error originated in the Google Analytics S\+DK. \mbox{\Hypertarget{_g_a_i_8h_a2f16be7751eb70c74e9b6f423e469681}\label{_g_a_i_8h_a2f16be7751eb70c74e9b6f423e469681}} 
+\index{G\+A\+I.\+h@{G\+A\+I.\+h}!k\+G\+A\+I\+Product@{k\+G\+A\+I\+Product}}
+\index{k\+G\+A\+I\+Product@{k\+G\+A\+I\+Product}!G\+A\+I.\+h@{G\+A\+I.\+h}}
+\subsubsection{\texorpdfstring{k\+G\+A\+I\+Product}{kGAIProduct}}
+{\footnotesize\ttfamily N\+S\+String$\ast$ const k\+G\+A\+I\+Product}
+
+Google Analytics product string. \mbox{\Hypertarget{_g_a_i_8h_ae488a4d809a766cfc0600452fe100707}\label{_g_a_i_8h_ae488a4d809a766cfc0600452fe100707}} 
+\index{G\+A\+I.\+h@{G\+A\+I.\+h}!k\+G\+A\+I\+Version@{k\+G\+A\+I\+Version}}
+\index{k\+G\+A\+I\+Version@{k\+G\+A\+I\+Version}!G\+A\+I.\+h@{G\+A\+I.\+h}}
+\subsubsection{\texorpdfstring{k\+G\+A\+I\+Version}{kGAIVersion}}
+{\footnotesize\ttfamily N\+S\+String$\ast$ const k\+G\+A\+I\+Version}
+
+Google Analytics version string. 

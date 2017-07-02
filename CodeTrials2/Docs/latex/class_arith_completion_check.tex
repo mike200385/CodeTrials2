@@ -1,0 +1,188 @@
+\hypertarget{class_arith_completion_check}{}\section{Arith\+Completion\+Check Class Reference}
+\label{class_arith_completion_check}\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+Inheritance diagram for Arith\+Completion\+Check\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_arith_completion_check}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_arith_completion_check_ab9599e148944886425068a34ae9b236b}{reset\+Puzzle} ()
+\item 
+void \hyperlink{class_arith_completion_check_a2dd62a0cac8f383172e3a7ef51c3e3a9}{reset\+Check\+Values} ()
+\item 
+void \hyperlink{class_arith_completion_check_a1499d7cc0dfc5e25ff71ed683a7e1cab}{open\+Door} ()
+\item 
+void \hyperlink{class_arith_completion_check_a98f38be633381fc1cc645506c854e4c1}{close\+Door} ()
+\item 
+void \hyperlink{class_arith_completion_check_a43f1f829ee2eb6fd6191c1e76565859b}{reset\+Slots} ()
+\begin{DoxyCompactList}\small\item\em reset slots to empty \end{DoxyCompactList}\item 
+void \hyperlink{class_arith_completion_check_ab9934c3847957162e5c0bccbe6a47c8c}{reset\+Tiles} ()
+\begin{DoxyCompactList}\small\item\em reset tiles to active and in original position \end{DoxyCompactList}\item 
+void \hyperlink{class_arith_completion_check_ab96e74dffadaa774579de016d1e4a355}{reset\+Active} ()
+\begin{DoxyCompactList}\small\item\em Resets all of the tiles to be active when resetting. \end{DoxyCompactList}\item 
+bool \hyperlink{class_arith_completion_check_a29984173a121cf0859ed1a08f4c0e5bd}{check\+Input\+Success} ()
+\begin{DoxyCompactList}\small\item\em Checks to be sure that all slots are filled. \end{DoxyCompactList}\item 
+bool \hyperlink{class_arith_completion_check_ae813642087af9661c17a03f8545d6f34}{check\+Input\+Name} ()
+\begin{DoxyCompactList}\small\item\em Checks to see if the input is correct and in the right order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \hyperlink{class_arith_completion_check_a29d52d8c29770841ace7a35f5b47f8c7}{check\+Slots}
+\begin{DoxyCompactList}\small\item\em manually set in inspector, slots to be filled by tiles \end{DoxyCompactList}\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \hyperlink{class_arith_completion_check_a6dd56d93f27bc485fc9354f665a87c2e}{array\+Tiles}
+\begin{DoxyCompactList}\small\item\em the tiles that will be dragged \end{DoxyCompactList}\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \hyperlink{class_arith_completion_check_a3e4dcde9c1f9660ba26ed864b0a465ac}{replacement\+Tiles}
+\begin{DoxyCompactList}\small\item\em The replacement tiles that go into the slots \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_arith_completion_check_a1ad4ba57922024cef5fc6e788a021f52}{door}
+\item 
+Audio\+Source \hyperlink{class_arith_completion_check_a3621baade2321e11481457c53e853595}{solved}
+\item 
+Text \hyperlink{class_arith_completion_check_a715d43af8f5e7b253e9f2da337733d4b}{error\+Message}
+\item 
+bool \hyperlink{class_arith_completion_check_a11562602e8ce1c9434e869aadf0ac697}{puzzle\+Finished}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Checks the respective challenge and makes changes to the game if the user is correct or not Challenge\+: Arith challenge 2 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arith_completion_check_ae813642087af9661c17a03f8545d6f34}\label{class_arith_completion_check_ae813642087af9661c17a03f8545d6f34}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!check\+Input\+Name@{check\+Input\+Name}}
+\index{check\+Input\+Name@{check\+Input\+Name}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{check\+Input\+Name()}{checkInputName()}}
+{\footnotesize\ttfamily bool Arith\+Completion\+Check.\+check\+Input\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks to see if the input is correct and in the right order. 
+
+\mbox{\Hypertarget{class_arith_completion_check_a29984173a121cf0859ed1a08f4c0e5bd}\label{class_arith_completion_check_a29984173a121cf0859ed1a08f4c0e5bd}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!check\+Input\+Success@{check\+Input\+Success}}
+\index{check\+Input\+Success@{check\+Input\+Success}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{check\+Input\+Success()}{checkInputSuccess()}}
+{\footnotesize\ttfamily bool Arith\+Completion\+Check.\+check\+Input\+Success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks to be sure that all slots are filled. 
+
+\mbox{\Hypertarget{class_arith_completion_check_a98f38be633381fc1cc645506c854e4c1}\label{class_arith_completion_check_a98f38be633381fc1cc645506c854e4c1}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!close\+Door@{close\+Door}}
+\index{close\+Door@{close\+Door}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{close\+Door()}{closeDoor()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+close\+Door (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_arith_completion_check_a1499d7cc0dfc5e25ff71ed683a7e1cab}\label{class_arith_completion_check_a1499d7cc0dfc5e25ff71ed683a7e1cab}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!open\+Door@{open\+Door}}
+\index{open\+Door@{open\+Door}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{open\+Door()}{openDoor()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+open\+Door (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_arith_completion_check_ab96e74dffadaa774579de016d1e4a355}\label{class_arith_completion_check_ab96e74dffadaa774579de016d1e4a355}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!reset\+Active@{reset\+Active}}
+\index{reset\+Active@{reset\+Active}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{reset\+Active()}{resetActive()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+reset\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets all of the tiles to be active when resetting. 
+
+\mbox{\Hypertarget{class_arith_completion_check_a2dd62a0cac8f383172e3a7ef51c3e3a9}\label{class_arith_completion_check_a2dd62a0cac8f383172e3a7ef51c3e3a9}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!reset\+Check\+Values@{reset\+Check\+Values}}
+\index{reset\+Check\+Values@{reset\+Check\+Values}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{reset\+Check\+Values()}{resetCheckValues()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+reset\+Check\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_arith_completion_check_ab9599e148944886425068a34ae9b236b}\label{class_arith_completion_check_ab9599e148944886425068a34ae9b236b}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!reset\+Puzzle@{reset\+Puzzle}}
+\index{reset\+Puzzle@{reset\+Puzzle}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{reset\+Puzzle()}{resetPuzzle()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+reset\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the puzzle Resets the Tiles, slots, check values, camera flag and error message \mbox{\Hypertarget{class_arith_completion_check_a43f1f829ee2eb6fd6191c1e76565859b}\label{class_arith_completion_check_a43f1f829ee2eb6fd6191c1e76565859b}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!reset\+Slots@{reset\+Slots}}
+\index{reset\+Slots@{reset\+Slots}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{reset\+Slots()}{resetSlots()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+reset\+Slots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset slots to empty 
+
+\mbox{\Hypertarget{class_arith_completion_check_ab9934c3847957162e5c0bccbe6a47c8c}\label{class_arith_completion_check_ab9934c3847957162e5c0bccbe6a47c8c}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!reset\+Tiles@{reset\+Tiles}}
+\index{reset\+Tiles@{reset\+Tiles}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{reset\+Tiles()}{resetTiles()}}
+{\footnotesize\ttfamily void Arith\+Completion\+Check.\+reset\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset tiles to active and in original position 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_arith_completion_check_a6dd56d93f27bc485fc9354f665a87c2e}\label{class_arith_completion_check_a6dd56d93f27bc485fc9354f665a87c2e}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!array\+Tiles@{array\+Tiles}}
+\index{array\+Tiles@{array\+Tiles}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{array\+Tiles}{arrayTiles}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Arith\+Completion\+Check.\+array\+Tiles}
+
+
+
+the tiles that will be dragged 
+
+\mbox{\Hypertarget{class_arith_completion_check_a29d52d8c29770841ace7a35f5b47f8c7}\label{class_arith_completion_check_a29d52d8c29770841ace7a35f5b47f8c7}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!check\+Slots@{check\+Slots}}
+\index{check\+Slots@{check\+Slots}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{check\+Slots}{checkSlots}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Arith\+Completion\+Check.\+check\+Slots}
+
+
+
+manually set in inspector, slots to be filled by tiles 
+
+\mbox{\Hypertarget{class_arith_completion_check_a1ad4ba57922024cef5fc6e788a021f52}\label{class_arith_completion_check_a1ad4ba57922024cef5fc6e788a021f52}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!door@{door}}
+\index{door@{door}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{door}{door}}
+{\footnotesize\ttfamily Game\+Object Arith\+Completion\+Check.\+door}
+
+\mbox{\Hypertarget{class_arith_completion_check_a715d43af8f5e7b253e9f2da337733d4b}\label{class_arith_completion_check_a715d43af8f5e7b253e9f2da337733d4b}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!error\+Message@{error\+Message}}
+\index{error\+Message@{error\+Message}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{error\+Message}{errorMessage}}
+{\footnotesize\ttfamily Text Arith\+Completion\+Check.\+error\+Message}
+
+\mbox{\Hypertarget{class_arith_completion_check_a11562602e8ce1c9434e869aadf0ac697}\label{class_arith_completion_check_a11562602e8ce1c9434e869aadf0ac697}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!puzzle\+Finished@{puzzle\+Finished}}
+\index{puzzle\+Finished@{puzzle\+Finished}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{puzzle\+Finished}{puzzleFinished}}
+{\footnotesize\ttfamily bool Arith\+Completion\+Check.\+puzzle\+Finished}
+
+\mbox{\Hypertarget{class_arith_completion_check_a3e4dcde9c1f9660ba26ed864b0a465ac}\label{class_arith_completion_check_a3e4dcde9c1f9660ba26ed864b0a465ac}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!replacement\+Tiles@{replacement\+Tiles}}
+\index{replacement\+Tiles@{replacement\+Tiles}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{replacement\+Tiles}{replacementTiles}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Arith\+Completion\+Check.\+replacement\+Tiles}
+
+
+
+The replacement tiles that go into the slots 
+
+\mbox{\Hypertarget{class_arith_completion_check_a3621baade2321e11481457c53e853595}\label{class_arith_completion_check_a3621baade2321e11481457c53e853595}} 
+\index{Arith\+Completion\+Check@{Arith\+Completion\+Check}!solved@{solved}}
+\index{solved@{solved}!Arith\+Completion\+Check@{Arith\+Completion\+Check}}
+\subsubsection{\texorpdfstring{solved}{solved}}
+{\footnotesize\ttfamily Audio\+Source Arith\+Completion\+Check.\+solved}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Scripts/\+Puzzle\+Logic/\+Arithmetic\+Puzzle/\hyperlink{_arith_completion_check_8cs}{Arith\+Completion\+Check.\+cs}\end{DoxyCompactItemize}

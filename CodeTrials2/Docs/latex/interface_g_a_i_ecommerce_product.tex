@@ -1,0 +1,137 @@
+\hypertarget{interface_g_a_i_ecommerce_product}{}\section{G\+A\+I\+Ecommerce\+Product Class Reference}
+\label{interface_g_a_i_ecommerce_product}\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+
+
+{\ttfamily \#import $<$G\+A\+I\+Ecommerce\+Product.\+h$>$}
+
+Inheritance diagram for G\+A\+I\+Ecommerce\+Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_i_ecommerce_product}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_ab7a68b9ae60da6769a27e9ed38b7791e}{set\+Id\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a0a5f048029cdcd09c2014a10bee1cb65}{set\+Name\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a86fe25148b6e2f292bea2291765518bb}{set\+Brand\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a82cb537f595d2c93390fd2b8c0ffa223}{set\+Category\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_aeb93bbdcb44cf4f0fce479bc08abeea9}{set\+Variant\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_af6b2de0cb8a61ec76f2fc60cf44181f3}{set\+Price\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_aac80209c3d8c6567900f289583e272aa}{set\+Quantity\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a2be17ca76aedd7b6856cb4d7085da559}{set\+Coupon\+Code\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a1fc008512a08f92e9b632dac80f860b2}{set\+Position\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a6e821c684506319ae670ca936ab6ed0c}{set\+Custom\+Dimension\+:value\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_aaa2a6a29355051fa001dae01e65aa77d}{set\+Custom\+Metric\+:value\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_a3ff6808550d4b30b9d83e862fc32f1ad}{build\+With\+Index\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_aa29f4f1f5c8339397ae37672d9b41f2b}{build\+With\+List\+Index\+:index\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{_g_a_i_ecommerce_product_8h}{G\+A\+I\+Ecommerce\+Product.\+h}  Google Analytics i\+OS S\+DK Hit Format Header \begin{DoxyCopyright}{Copyright}
+Copyright 2014 Google Inc. All rights reserved.
+\end{DoxyCopyright}
+Class to construct product related information for a Google Analytics beacon. Use this class to report information about products sold by merchants or impressions of products seen by users. Instances of this class can be associated with both Product Actions and Product Impression Lists. ~\newline
+ Typical usage\+: {\ttfamily  \mbox{[}tracker set\+:k\+G\+A\+I\+Screen\+Name value\+:"My\+Screen"\mbox{]}; \hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder} $\ast$builder = \mbox{[}\hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder} create\+Screen\+View\mbox{]}; \hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$product = \mbox{[}\mbox{[}\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} alloc\mbox{]} init\mbox{]}; \mbox{[}product set\+Id\+:"\char`\"{}\+P\+I\+D-\/1234\char`\"{}\char`\"{}\mbox{]};
+\mbox{[}product set\+Name\+:@\char`\"{}Space Monkeys!"\mbox{]}; \mbox{[}product set\+Price\+:@100\mbox{]}; \mbox{[}product set\+Quantity\+:@2\mbox{]}; \mbox{[}builder add\+Product\+Impression\+:product impression\+List\+:"list\+Name"\mbox{]}; \mbox{[}tracker send\+:\mbox{[}builder build\mbox{]}\mbox{]}; } 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a3ff6808550d4b30b9d83e862fc32f1ad}\label{interface_g_a_i_ecommerce_product_a3ff6808550d4b30b9d83e862fc32f1ad}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!build\+With\+Index\+:@{build\+With\+Index\+:}}
+\index{build\+With\+Index\+:@{build\+With\+Index\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{build\+With\+Index\+:()}{buildWithIndex:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) build\+With\+Index\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{index }\end{DoxyParamCaption}}
+
+Builds an N\+S\+Dictionary of fields stored in this instance suitable for a product action. The index parameter is the index of this product in the product action list. ~\newline
+ Normally, users will have no need to call this method. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_aa29f4f1f5c8339397ae37672d9b41f2b}\label{interface_g_a_i_ecommerce_product_aa29f4f1f5c8339397ae37672d9b41f2b}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!build\+With\+List\+Index\+:index\+:@{build\+With\+List\+Index\+:index\+:}}
+\index{build\+With\+List\+Index\+:index\+:@{build\+With\+List\+Index\+:index\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{build\+With\+List\+Index\+:index\+:()}{buildWithListIndex:index:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) build\+With\+List\+Index\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{l\+Index }\item[{index:(N\+S\+U\+Integer)}]{index }\end{DoxyParamCaption}}
+
+Builds an N\+S\+Dictionary of fields stored in this instance suitable for an impression list. The l\+Index parameter is the index of the product impression list while the index parameter is the index of this product in that impression list. ~\newline
+ Normally, users will have no need to call this method. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a86fe25148b6e2f292bea2291765518bb}\label{interface_g_a_i_ecommerce_product_a86fe25148b6e2f292bea2291765518bb}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Brand\+:@{set\+Brand\+:}}
+\index{set\+Brand\+:@{set\+Brand\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Brand\+:()}{setBrand:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Brand\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Brand }\end{DoxyParamCaption}}
+
+Sets the brand associated with the product in GA reports. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a82cb537f595d2c93390fd2b8c0ffa223}\label{interface_g_a_i_ecommerce_product_a82cb537f595d2c93390fd2b8c0ffa223}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Category\+:@{set\+Category\+:}}
+\index{set\+Category\+:@{set\+Category\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Category\+:()}{setCategory:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Category\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Category }\end{DoxyParamCaption}}
+
+Sets the category associated with the product in GA reports. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a2be17ca76aedd7b6856cb4d7085da559}\label{interface_g_a_i_ecommerce_product_a2be17ca76aedd7b6856cb4d7085da559}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Coupon\+Code\+:@{set\+Coupon\+Code\+:}}
+\index{set\+Coupon\+Code\+:@{set\+Coupon\+Code\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Coupon\+Code\+:()}{setCouponCode:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Coupon\+Code\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Coupon\+Code }\end{DoxyParamCaption}}
+
+Sets the coupon code associated with the product. This field is usually not used with product impressions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a6e821c684506319ae670ca936ab6ed0c}\label{interface_g_a_i_ecommerce_product_a6e821c684506319ae670ca936ab6ed0c}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Custom\+Dimension\+:value\+:@{set\+Custom\+Dimension\+:value\+:}}
+\index{set\+Custom\+Dimension\+:value\+:@{set\+Custom\+Dimension\+:value\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Custom\+Dimension\+:value\+:()}{setCustomDimension:value:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Custom\+Dimension\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{index }\item[{value:(N\+S\+String $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Sets the custom dimension associated with this product. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_aaa2a6a29355051fa001dae01e65aa77d}\label{interface_g_a_i_ecommerce_product_aaa2a6a29355051fa001dae01e65aa77d}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Custom\+Metric\+:value\+:@{set\+Custom\+Metric\+:value\+:}}
+\index{set\+Custom\+Metric\+:value\+:@{set\+Custom\+Metric\+:value\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Custom\+Metric\+:value\+:()}{setCustomMetric:value:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Custom\+Metric\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{index }\item[{value:(N\+S\+Number $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Sets the custom metric associated with this product. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_ab7a68b9ae60da6769a27e9ed38b7791e}\label{interface_g_a_i_ecommerce_product_ab7a68b9ae60da6769a27e9ed38b7791e}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Id\+:@{set\+Id\+:}}
+\index{set\+Id\+:@{set\+Id\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Id\+:()}{setId:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Id }\end{DoxyParamCaption}}
+
+Sets the id that is used to identify a product in GA reports. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a0a5f048029cdcd09c2014a10bee1cb65}\label{interface_g_a_i_ecommerce_product_a0a5f048029cdcd09c2014a10bee1cb65}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Name\+:@{set\+Name\+:}}
+\index{set\+Name\+:@{set\+Name\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Name\+:()}{setName:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Name }\end{DoxyParamCaption}}
+
+Sets the name that is used to indentify the product in GA reports. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_a1fc008512a08f92e9b632dac80f860b2}\label{interface_g_a_i_ecommerce_product_a1fc008512a08f92e9b632dac80f860b2}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Position\+:@{set\+Position\+:}}
+\index{set\+Position\+:@{set\+Position\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Position\+:()}{setPosition:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Position\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{product\+Position }\end{DoxyParamCaption}}
+
+Sets the position of the product on the screen/product impression list, etc. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_af6b2de0cb8a61ec76f2fc60cf44181f3}\label{interface_g_a_i_ecommerce_product_af6b2de0cb8a61ec76f2fc60cf44181f3}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Price\+:@{set\+Price\+:}}
+\index{set\+Price\+:@{set\+Price\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Price\+:()}{setPrice:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Price\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{product\+Price }\end{DoxyParamCaption}}
+
+Sets the price of the product. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_aac80209c3d8c6567900f289583e272aa}\label{interface_g_a_i_ecommerce_product_aac80209c3d8c6567900f289583e272aa}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Quantity\+:@{set\+Quantity\+:}}
+\index{set\+Quantity\+:@{set\+Quantity\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Quantity\+:()}{setQuantity:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Quantity\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{product\+Quantity }\end{DoxyParamCaption}}
+
+Sets the quantity of the product. This field is usually not used with product impressions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_aeb93bbdcb44cf4f0fce479bc08abeea9}\label{interface_g_a_i_ecommerce_product_aeb93bbdcb44cf4f0fce479bc08abeea9}} 
+\index{G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}!set\+Variant\+:@{set\+Variant\+:}}
+\index{set\+Variant\+:@{set\+Variant\+:}!G\+A\+I\+Ecommerce\+Product@{G\+A\+I\+Ecommerce\+Product}}
+\subsubsection{\texorpdfstring{set\+Variant\+:()}{setVariant:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$) set\+Variant\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Variant }\end{DoxyParamCaption}}
+
+Sets the variant of the product. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_ecommerce_product_8h}{G\+A\+I\+Ecommerce\+Product.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{interface_g_a_i_ecommerce_product_action}{}\section{G\+A\+I\+Ecommerce\+Product\+Action Class Reference}
+\label{interface_g_a_i_ecommerce_product_action}\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+
+
+{\ttfamily \#import $<$G\+A\+I\+Ecommerce\+Product\+Action.\+h$>$}
+
+Inheritance diagram for G\+A\+I\+Ecommerce\+Product\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_i_ecommerce_product_action}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_ac8891a6025102bd1b8e2071c2ee92d64}{set\+Action\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_a94b1cacc99d153cbe04a92cfee5618d7}{set\+Transaction\+Id\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_acb7fd9fce90be149a9dfde99a7ccb7f1}{set\+Affiliation\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_abcb5406f9f38402a23b26174a7af6206}{set\+Revenue\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_ab17db217703315dc44cca39c272c7c00}{set\+Tax\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_a6419c96e6e0e871bb0ab0115e9358ac2}{set\+Shipping\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_a4ef010bcb348cc92071fac8ee45cb488}{set\+Coupon\+Code\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_ac4bcb2439fb133fb049f59c740d94dde}{set\+Checkout\+Step\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_a1f4cfccfdef393473652746e0e81209c}{set\+Checkout\+Option\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_a96a1aaedd949a9fb524916ef830728c0}{set\+Product\+Action\+List\+:}
+\item 
+(\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_a9fd6cd67e0032ed2cec4e4ba222146c8}{set\+Product\+List\+Source\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_g_a_i_ecommerce_product_action_ab5070c54e30543649778dede1145ed33}{build}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\+A\+I\+Product\+Action.\+h  Google Analytics i\+OS S\+DK Hit Format Header \begin{DoxyCopyright}{Copyright}
+Copyright 2014 Google Inc. All rights reserved.
+\end{DoxyCopyright}
+Class to construct transaction/checkout or other product interaction related information for a Google Analytics hit. Use this class to report information about products sold, viewed or refunded. This class is intended to be used with \hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder}. ~\newline
+ Typical usage\+: {\ttfamily  \mbox{[}tracker set\+:k\+G\+A\+I\+Screen\+Name value\+:"My\+Screen"\mbox{]}; \hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder} $\ast$builder = \mbox{[}\hyperlink{interface_g_a_i_dictionary_builder}{G\+A\+I\+Dictionary\+Builder} create\+Screen\+View\mbox{]}; \hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$action = \mbox{[}\mbox{[}\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} alloc\mbox{]} init\mbox{]}; \mbox{[}action set\+Action\+:k\+G\+A\+I\+P\+A\+Purchase\mbox{]}; \mbox{[}action set\+Transaction\+Id\+:"T\+T-\/1234"\mbox{]}; \mbox{[}action set\+Revenue\+:@3.\+14\mbox{]}; \mbox{[}action set\+Coupon\+Code\+:"E\+X\+T\+R\+A100"\mbox{]}; \mbox{[}builder set\+Product\+Action\+:action\mbox{]}; \hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} $\ast$product = \mbox{[}\mbox{[}\hyperlink{interface_g_a_i_ecommerce_product}{G\+A\+I\+Ecommerce\+Product} alloc\mbox{]} init\mbox{]}; \mbox{[}product set\+Id\+:"\char`\"{}\+P\+I\+D-\/1234\char`\"{}\char`\"{}\mbox{]};
+\mbox{[}product set\+Name\+:@\char`\"{}Space Monkeys!"\mbox{]}; \mbox{[}product set\+Price\+:@100\mbox{]}; \mbox{[}product set\+Quantity\+:@2\mbox{]}; \mbox{[}builder add\+Product\+:product\mbox{]}; \mbox{[}tracker send\+:\mbox{[}builder build\mbox{]}\mbox{]}; } 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_ab5070c54e30543649778dede1145ed33}\label{interface_g_a_i_ecommerce_product_action_ab5070c54e30543649778dede1145ed33}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!build@{build}}
+\index{build@{build}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) build \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Builds an N\+S\+Dictionary of fields stored in this instance representing this product action. ~\newline
+ Normally, users will have no need to call this method. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_ac8891a6025102bd1b8e2071c2ee92d64}\label{interface_g_a_i_ecommerce_product_action_ac8891a6025102bd1b8e2071c2ee92d64}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Action\+:@{set\+Action\+:}}
+\index{set\+Action\+:@{set\+Action\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Action\+:()}{setAction:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Action\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Action }\end{DoxyParamCaption}}
+
+Sets the product action field for this product action. Valid values can be found in \hyperlink{_g_a_i_ecommerce_fields_8h}{G\+A\+I\+Ecommerce\+Fields.\+h} under \char`\"{}product action values\char`\"{}. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_acb7fd9fce90be149a9dfde99a7ccb7f1}\label{interface_g_a_i_ecommerce_product_action_acb7fd9fce90be149a9dfde99a7ccb7f1}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Affiliation\+:@{set\+Affiliation\+:}}
+\index{set\+Affiliation\+:@{set\+Affiliation\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Affiliation\+:()}{setAffiliation:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Affiliation\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{affiliation }\end{DoxyParamCaption}}
+
+Sets the transaction\textquotesingle{}s affiliation value. This value is used for k\+G\+A\+I\+P\+A\+Purchase and k\+G\+A\+I\+P\+A\+Refund product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_a1f4cfccfdef393473652746e0e81209c}\label{interface_g_a_i_ecommerce_product_action_a1f4cfccfdef393473652746e0e81209c}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Checkout\+Option\+:@{set\+Checkout\+Option\+:}}
+\index{set\+Checkout\+Option\+:@{set\+Checkout\+Option\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Checkout\+Option\+:()}{setCheckoutOption:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Checkout\+Option\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{checkout\+Option }\end{DoxyParamCaption}}
+
+Sets the option associated with the checkout. This value is used for k\+G\+A\+I\+Checkout and k\+G\+A\+I\+Checkout\+Options product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_ac4bcb2439fb133fb049f59c740d94dde}\label{interface_g_a_i_ecommerce_product_action_ac4bcb2439fb133fb049f59c740d94dde}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Checkout\+Step\+:@{set\+Checkout\+Step\+:}}
+\index{set\+Checkout\+Step\+:@{set\+Checkout\+Step\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Checkout\+Step\+:()}{setCheckoutStep:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Checkout\+Step\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{checkout\+Step }\end{DoxyParamCaption}}
+
+Sets the checkout process\textquotesingle{}s progress. This value is used for k\+G\+A\+I\+Checkout and k\+G\+A\+I\+Checkout\+Options product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_a4ef010bcb348cc92071fac8ee45cb488}\label{interface_g_a_i_ecommerce_product_action_a4ef010bcb348cc92071fac8ee45cb488}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Coupon\+Code\+:@{set\+Coupon\+Code\+:}}
+\index{set\+Coupon\+Code\+:@{set\+Coupon\+Code\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Coupon\+Code\+:()}{setCouponCode:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Coupon\+Code\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{coupon\+Code }\end{DoxyParamCaption}}
+
+Sets the coupon code used in this transaction. This value is used for k\+G\+A\+I\+P\+A\+Purchase and k\+G\+A\+I\+P\+A\+Refund product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_a96a1aaedd949a9fb524916ef830728c0}\label{interface_g_a_i_ecommerce_product_action_a96a1aaedd949a9fb524916ef830728c0}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Product\+Action\+List\+:@{set\+Product\+Action\+List\+:}}
+\index{set\+Product\+Action\+List\+:@{set\+Product\+Action\+List\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Product\+Action\+List\+:()}{setProductActionList:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Product\+Action\+List\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+Action\+List }\end{DoxyParamCaption}}
+
+Sets the list name associated with the products in Google Analytics beacons. This value is used in k\+G\+A\+I\+P\+A\+Detail and k\+G\+A\+I\+P\+A\+Click product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_a9fd6cd67e0032ed2cec4e4ba222146c8}\label{interface_g_a_i_ecommerce_product_action_a9fd6cd67e0032ed2cec4e4ba222146c8}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Product\+List\+Source\+:@{set\+Product\+List\+Source\+:}}
+\index{set\+Product\+List\+Source\+:@{set\+Product\+List\+Source\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Product\+List\+Source\+:()}{setProductListSource:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Product\+List\+Source\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{product\+List\+Source }\end{DoxyParamCaption}}
+
+Sets the list source name associated with the products in Google Analytics beacons. This value is used in k\+G\+A\+I\+P\+A\+Detail and k\+G\+A\+I\+P\+A\+Click product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_abcb5406f9f38402a23b26174a7af6206}\label{interface_g_a_i_ecommerce_product_action_abcb5406f9f38402a23b26174a7af6206}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Revenue\+:@{set\+Revenue\+:}}
+\index{set\+Revenue\+:@{set\+Revenue\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Revenue\+:()}{setRevenue:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Revenue\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{revenue }\end{DoxyParamCaption}}
+
+Sets the transaction\textquotesingle{}s total revenue. This value is used for k\+G\+A\+I\+P\+A\+Purchase and k\+G\+A\+I\+P\+A\+Refund product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_a6419c96e6e0e871bb0ab0115e9358ac2}\label{interface_g_a_i_ecommerce_product_action_a6419c96e6e0e871bb0ab0115e9358ac2}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Shipping\+:@{set\+Shipping\+:}}
+\index{set\+Shipping\+:@{set\+Shipping\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Shipping\+:()}{setShipping:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Shipping\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{shipping }\end{DoxyParamCaption}}
+
+Sets the transaction\textquotesingle{}s total shipping costs. This value is used for k\+G\+A\+I\+P\+A\+Purchase and k\+G\+A\+I\+P\+A\+Refund product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_ab17db217703315dc44cca39c272c7c00}\label{interface_g_a_i_ecommerce_product_action_ab17db217703315dc44cca39c272c7c00}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Tax\+:@{set\+Tax\+:}}
+\index{set\+Tax\+:@{set\+Tax\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Tax\+:()}{setTax:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Tax\+: \begin{DoxyParamCaption}\item[{(N\+S\+Number $\ast$)}]{tax }\end{DoxyParamCaption}}
+
+Sets the transaction\textquotesingle{}s total tax. This value is used for k\+G\+A\+I\+P\+A\+Purchase and k\+G\+A\+I\+P\+A\+Refund product actions. \mbox{\Hypertarget{interface_g_a_i_ecommerce_product_action_a94b1cacc99d153cbe04a92cfee5618d7}\label{interface_g_a_i_ecommerce_product_action_a94b1cacc99d153cbe04a92cfee5618d7}} 
+\index{G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}!set\+Transaction\+Id\+:@{set\+Transaction\+Id\+:}}
+\index{set\+Transaction\+Id\+:@{set\+Transaction\+Id\+:}!G\+A\+I\+Ecommerce\+Product\+Action@{G\+A\+I\+Ecommerce\+Product\+Action}}
+\subsubsection{\texorpdfstring{set\+Transaction\+Id\+:()}{setTransactionId:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_g_a_i_ecommerce_product_action}{G\+A\+I\+Ecommerce\+Product\+Action} $\ast$) set\+Transaction\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{transaction\+Id }\end{DoxyParamCaption}}
+
+The unique id associated with the transaction. This value is used for k\+G\+A\+I\+P\+A\+Purchase and k\+G\+A\+I\+P\+A\+Refund product actions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_ecommerce_product_action_8h}{G\+A\+I\+Ecommerce\+Product\+Action.\+h}\end{DoxyCompactItemize}

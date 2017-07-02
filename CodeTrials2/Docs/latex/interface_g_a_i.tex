@@ -1,0 +1,181 @@
+\hypertarget{interface_g_a_i}{}\section{G\+AI Class Reference}
+\label{interface_g_a_i}\index{G\+AI@{G\+AI}}
+
+
+{\ttfamily \#import $<$G\+A\+I.\+h$>$}
+
+Inheritance diagram for G\+AI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_i}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id$<$ \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} $>$) -\/ \hyperlink{interface_g_a_i_a44db9f9fe6a63c95be683ff11813c781}{tracker\+With\+Name\+:tracking\+Id\+:}
+\item 
+(id$<$ \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} $>$) -\/ \hyperlink{interface_g_a_i_a618ed07fef9f41c6cd33d17debec402c}{tracker\+With\+Tracking\+Id\+:}
+\item 
+(void) -\/ \hyperlink{interface_g_a_i_a6fa05df65911abbdeb4bb7d70389cf99}{remove\+Tracker\+By\+Name\+:}
+\item 
+(void) -\/ \hyperlink{interface_g_a_i_ad4e8b6ff89df5bc200f2f6aa1877159c}{dispatch}
+\item 
+(void) -\/ \hyperlink{interface_g_a_i_a5ca71a28925068e89dd5b3e3c5433500}{dispatch\+With\+Completion\+Handler\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_g_a_i}{G\+AI} $\ast$) + \hyperlink{interface_g_a_i_ac150ba078bd1eaf36f9c0652890814f2}{shared\+Instance}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} $>$ \hyperlink{interface_g_a_i_a72941e445c4e4ec9b8c13b7f1cf73977}{default\+Tracker}
+\item 
+id$<$ \hyperlink{protocol_g_a_i_logger-p}{G\+A\+I\+Logger} $>$ \hyperlink{interface_g_a_i_a0f8b5edd02f567ee270b23b1d57264a3}{logger}
+\item 
+B\+O\+OL \hyperlink{interface_g_a_i_a9cff3fd3bd10af9b8560ef92cc0732a8}{opt\+Out}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_g_a_i_a6756ef050da75f9d4239831fa2a1fed2}{dispatch\+Interval}
+\item 
+B\+O\+OL \hyperlink{interface_g_a_i_a016993f03870e97448f5ab23f9cb13a9}{track\+Uncaught\+Exceptions}
+\item 
+B\+O\+OL \hyperlink{interface_g_a_i_aa42ce3bc919eeb55840c414c04d72497}{dry\+Run}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Google Analytics i\+OS top-\/level class. Provides facilities to create trackers and set behaviorial flags. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_g_a_i_ad4e8b6ff89df5bc200f2f6aa1877159c}\label{interface_g_a_i_ad4e8b6ff89df5bc200f2f6aa1877159c}} 
+\index{G\+AI@{G\+AI}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily -\/ (void) dispatch \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Dispatches any pending tracking information.
+
+Note that this does not have any effect on dispatch\+Interval, and can be used in conjunction with periodic dispatch. \mbox{\Hypertarget{interface_g_a_i_a5ca71a28925068e89dd5b3e3c5433500}\label{interface_g_a_i_a5ca71a28925068e89dd5b3e3c5433500}} 
+\index{G\+AI@{G\+AI}!dispatch\+With\+Completion\+Handler\+:@{dispatch\+With\+Completion\+Handler\+:}}
+\index{dispatch\+With\+Completion\+Handler\+:@{dispatch\+With\+Completion\+Handler\+:}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{dispatch\+With\+Completion\+Handler\+:()}{dispatchWithCompletionHandler:()}}
+{\footnotesize\ttfamily -\/ (void) dispatch\+With\+Completion\+Handler\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(G\+A\+I\+Dispatch\+Result result))}]{completion\+Handler }\end{DoxyParamCaption}}
+
+Dispatches the next tracking beacon in the queue, calling completion\+Handler when the tracking beacon has either been sent (returning k\+G\+A\+I\+Dispatch\+Good) or an error has resulted (returning k\+G\+A\+I\+Dispatch\+Error). If there is no network connection or there is no data to send, k\+G\+A\+I\+Dispatch\+No\+Data is returned.
+
+Note that calling this method with a non-\/nil completion\+Handler disables periodic dispatch. Periodic dispatch can be reenabled by setting the dispatch\+Interval to a positive number when the app resumes from the background.
+
+Calling this method with a nil completion\+Handler is the same as calling the dispatch above.
+
+This method can be used for background data fetching in i\+OS 7.\+0 or later. It would be wise to call this when the application is exiting to initiate the submission of any unsubmitted tracking information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion\+Handler} & The block to run after a single dispatch request. The G\+A\+I\+Dispatch\+Result param indicates whether the dispatch succeeded, had an error, or had no hits to dispatch. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_g_a_i_a6fa05df65911abbdeb4bb7d70389cf99}\label{interface_g_a_i_a6fa05df65911abbdeb4bb7d70389cf99}} 
+\index{G\+AI@{G\+AI}!remove\+Tracker\+By\+Name\+:@{remove\+Tracker\+By\+Name\+:}}
+\index{remove\+Tracker\+By\+Name\+:@{remove\+Tracker\+By\+Name\+:}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{remove\+Tracker\+By\+Name\+:()}{removeTrackerByName:()}}
+{\footnotesize\ttfamily -\/ (void) remove\+Tracker\+By\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+Remove a tracker from the trackers dictionary. If it is the default tracker, clears the default tracker as well.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the tracker. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_g_a_i_ac150ba078bd1eaf36f9c0652890814f2}\label{interface_g_a_i_ac150ba078bd1eaf36f9c0652890814f2}} 
+\index{G\+AI@{G\+AI}!shared\+Instance@{shared\+Instance}}
+\index{shared\+Instance@{shared\+Instance}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{shared\+Instance()}{sharedInstance()}}
+{\footnotesize\ttfamily + (\hyperlink{interface_g_a_i}{G\+AI} $\ast$) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get the shared instance of the Google Analytics for i\+OS class. \mbox{\Hypertarget{interface_g_a_i_a44db9f9fe6a63c95be683ff11813c781}\label{interface_g_a_i_a44db9f9fe6a63c95be683ff11813c781}} 
+\index{G\+AI@{G\+AI}!tracker\+With\+Name\+:tracking\+Id\+:@{tracker\+With\+Name\+:tracking\+Id\+:}}
+\index{tracker\+With\+Name\+:tracking\+Id\+:@{tracker\+With\+Name\+:tracking\+Id\+:}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{tracker\+With\+Name\+:tracking\+Id\+:()}{trackerWithName:trackingId:()}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker}$>$) tracker\+With\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\item[{trackingId:(N\+S\+String $\ast$)}]{tracking\+Id }\end{DoxyParamCaption}}
+
+Creates or retrieves a \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} implementation with the specified name and tracking ID. If the tracker for the specified name does not already exist, then it will be created and returned; otherwise, the existing tracker will be returned. If the existing tracker for the respective name has a different tracking ID, that tracking ID is not changed by this method. If default\+Tracker is not set, it will be set to the tracker instance returned here.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of this tracker. Must not be {\ttfamily nil} or empty.\\
+\hline
+{\em tracking\+ID} & The tracking ID to use for this tracker. It should be of the form {\ttfamily U\+A-\/xxxxx-\/y}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} associated with the specified name. The tracker can be used to send tracking data to Google Analytics. The first time this method is called with a particular name, the tracker for that name will be returned, and subsequent calls with the same name will return the same instance. It is not necessary to retain the tracker because the tracker will be retained internally by the library.
+\end{DoxyReturn}
+If an error occurs or the name is not valid, this method will return {\ttfamily nil}. \mbox{\Hypertarget{interface_g_a_i_a618ed07fef9f41c6cd33d17debec402c}\label{interface_g_a_i_a618ed07fef9f41c6cd33d17debec402c}} 
+\index{G\+AI@{G\+AI}!tracker\+With\+Tracking\+Id\+:@{tracker\+With\+Tracking\+Id\+:}}
+\index{tracker\+With\+Tracking\+Id\+:@{tracker\+With\+Tracking\+Id\+:}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{tracker\+With\+Tracking\+Id\+:()}{trackerWithTrackingId:()}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker}$>$) tracker\+With\+Tracking\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{tracking\+Id }\end{DoxyParamCaption}}
+
+Creates or retrieves a \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} implementation with name equal to the specified tracking ID. If the tracker for the respective name does not already exist, it is created, has it\textquotesingle{}s tracking ID set to $\vert$tracking\+Id$\vert$, and is returned; otherwise, the existing tracker is returned. If the existing tracker for the respective name has a different tracking ID, that tracking ID is not changed by this method. If default\+Tracker is not set, it is set to the tracker instance returned here.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tracking\+ID} & The tracking ID to use for this tracker. It should be of the form {\ttfamily U\+A-\/xxxxx-\/y}. The name of the tracker will be the same as tracking\+ID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker} associated with the specified tracking\+ID. The tracker can be used to send tracking data to Google Analytics. The first time this method is called with a particular tracking\+ID, the tracker for the respective name will be returned, and subsequent calls with the same tracking\+ID will return the same instance. It is not necessary to retain the tracker because the tracker will be retained internally by the library.
+\end{DoxyReturn}
+If an error occurs or the tracking\+Id is not valid, this method will return {\ttfamily nil}. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_g_a_i_a72941e445c4e4ec9b8c13b7f1cf73977}\label{interface_g_a_i_a72941e445c4e4ec9b8c13b7f1cf73977}} 
+\index{G\+AI@{G\+AI}!default\+Tracker@{default\+Tracker}}
+\index{default\+Tracker@{default\+Tracker}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{default\+Tracker}{defaultTracker}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_g_a_i_tracker-p}{G\+A\+I\+Tracker}$>$) default\+Tracker\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+For convenience, this class exposes a default tracker instance. This is initialized to {\ttfamily nil} and will be set to the first tracker that is instantiated in tracker\+With\+Tracking\+Id\+:. It may be overridden as desired.
+
+The \hyperlink{interface_g_a_i_tracked_view_controller}{G\+A\+I\+Tracked\+View\+Controller} class will, by default, use this tracker instance. \mbox{\Hypertarget{interface_g_a_i_a6756ef050da75f9d4239831fa2a1fed2}\label{interface_g_a_i_a6756ef050da75f9d4239831fa2a1fed2}} 
+\index{G\+AI@{G\+AI}!dispatch\+Interval@{dispatch\+Interval}}
+\index{dispatch\+Interval@{dispatch\+Interval}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{dispatch\+Interval}{dispatchInterval}}
+{\footnotesize\ttfamily -\/ (N\+S\+Time\+Interval) dispatch\+Interval\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+If this value is positive, tracking information will be automatically dispatched every dispatch\+Interval seconds. Otherwise, tracking information must be sent manually by calling dispatch.
+
+By default, this is set to {\ttfamily 120}, which indicates tracking information should be dispatched automatically every 120 seconds. \mbox{\Hypertarget{interface_g_a_i_aa42ce3bc919eeb55840c414c04d72497}\label{interface_g_a_i_aa42ce3bc919eeb55840c414c04d72497}} 
+\index{G\+AI@{G\+AI}!dry\+Run@{dry\+Run}}
+\index{dry\+Run@{dry\+Run}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{dry\+Run}{dryRun}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) dry\+Run\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+When this is \textquotesingle{}Y\+ES\textquotesingle{}, no tracking information will be sent. Defaults to \textquotesingle{}NO\textquotesingle{}. \mbox{\Hypertarget{interface_g_a_i_a0f8b5edd02f567ee270b23b1d57264a3}\label{interface_g_a_i_a0f8b5edd02f567ee270b23b1d57264a3}} 
+\index{G\+AI@{G\+AI}!logger@{logger}}
+\index{logger@{logger}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_g_a_i_logger-p}{G\+A\+I\+Logger}$>$) logger\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+The \hyperlink{protocol_g_a_i_logger-p}{G\+A\+I\+Logger} to use. \mbox{\Hypertarget{interface_g_a_i_a9cff3fd3bd10af9b8560ef92cc0732a8}\label{interface_g_a_i_a9cff3fd3bd10af9b8560ef92cc0732a8}} 
+\index{G\+AI@{G\+AI}!opt\+Out@{opt\+Out}}
+\index{opt\+Out@{opt\+Out}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{opt\+Out}{optOut}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) opt\+Out\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+When this is true, no tracking information will be gathered; tracking calls will effectively become no-\/ops. When set to true, all tracking information that has not yet been submitted. The value of this flag will be persisted automatically by the S\+DK. Developers can optionally use this flag to implement an opt-\/out setting in the app to allows users to opt out of Google Analytics tracking.
+
+This is set to {\ttfamily NO} the first time the Google Analytics S\+DK is used on a device, and is persisted thereafter. \mbox{\Hypertarget{interface_g_a_i_a016993f03870e97448f5ab23f9cb13a9}\label{interface_g_a_i_a016993f03870e97448f5ab23f9cb13a9}} 
+\index{G\+AI@{G\+AI}!track\+Uncaught\+Exceptions@{track\+Uncaught\+Exceptions}}
+\index{track\+Uncaught\+Exceptions@{track\+Uncaught\+Exceptions}!G\+AI@{G\+AI}}
+\subsubsection{\texorpdfstring{track\+Uncaught\+Exceptions}{trackUncaughtExceptions}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) track\+Uncaught\+Exceptions\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+When set to true, the S\+DK will record the currently registered uncaught exception handler, and then register an uncaught exception handler which tracks the exceptions that occurred using default\+Tracker. If default\+Tracker is not {\ttfamily nil}, this function will track the exception on the tracker and attempt to dispatch any outstanding tracking information for 5 seconds. It will then call the previously registered exception handler, if any. When set back to false, the previously registered uncaught exception handler will be restored. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_8h}{G\+A\+I.\+h}\end{DoxyCompactItemize}

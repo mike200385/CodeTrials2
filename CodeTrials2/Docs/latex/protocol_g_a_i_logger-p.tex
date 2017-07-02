@@ -1,0 +1,72 @@
+\hypertarget{protocol_g_a_i_logger-p}{}\section{$<$G\+A\+I\+Logger$>$ Protocol Reference}
+\label{protocol_g_a_i_logger-p}\index{$<$\+G\+A\+I\+Logger$>$@{$<$\+G\+A\+I\+Logger$>$}}
+
+
+{\ttfamily \#import $<$G\+A\+I\+Logger.\+h$>$}
+
+Inheritance diagram for $<$G\+A\+I\+Logger$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_g_a_i_logger-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_g_a_i_logger-p_a8bc28260ceafda68a72e29baecb9c0c6}{verbose\+:}
+\item 
+(void) -\/ \hyperlink{protocol_g_a_i_logger-p_ae558e4ce1a6d65c86abd17a11a698618}{info\+:}
+\item 
+(void) -\/ \hyperlink{protocol_g_a_i_logger-p_a47771f0b70be428422ea58950f3cc506}{warning\+:}
+\item 
+(void) -\/ \hyperlink{protocol_g_a_i_logger-p_a8a52b3a59b1aa5319f0c3b41ea5b7e4a}{error\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+G\+A\+I\+Log\+Level \hyperlink{protocol_g_a_i_logger-p_a42c0b17d9224b8a9b02281a3537cded4}{log\+Level}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protocol to be used for logging debug and informational messages from the S\+DK. Implementations of this protocol can be provided to the $\vert$\+G\+A\+I$\vert$ class, to be used as the logger by the S\+DK. See the $\vert$logger$\vert$ property in \hyperlink{_g_a_i_8h}{G\+A\+I.\+h}. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_g_a_i_logger-p_a8a52b3a59b1aa5319f0c3b41ea5b7e4a}\label{protocol_g_a_i_logger-p_a8a52b3a59b1aa5319f0c3b41ea5b7e4a}} 
+\index{G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}!error\+:@{error\+:}}
+\index{error\+:@{error\+:}!G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}}
+\subsubsection{\texorpdfstring{error\+:()}{error:()}}
+{\footnotesize\ttfamily -\/ (void) error\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Logs message with log level $\vert$k\+G\+A\+I\+Log\+Level\+Error$\vert$. \mbox{\Hypertarget{protocol_g_a_i_logger-p_ae558e4ce1a6d65c86abd17a11a698618}\label{protocol_g_a_i_logger-p_ae558e4ce1a6d65c86abd17a11a698618}} 
+\index{G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}!info\+:@{info\+:}}
+\index{info\+:@{info\+:}!G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}}
+\subsubsection{\texorpdfstring{info\+:()}{info:()}}
+{\footnotesize\ttfamily -\/ (void) info\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Logs message with log level $\vert$k\+G\+A\+I\+Log\+Level\+Info$\vert$. \mbox{\Hypertarget{protocol_g_a_i_logger-p_a8bc28260ceafda68a72e29baecb9c0c6}\label{protocol_g_a_i_logger-p_a8bc28260ceafda68a72e29baecb9c0c6}} 
+\index{G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}!verbose\+:@{verbose\+:}}
+\index{verbose\+:@{verbose\+:}!G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}}
+\subsubsection{\texorpdfstring{verbose\+:()}{verbose:()}}
+{\footnotesize\ttfamily -\/ (void) verbose\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Logs message with log level $\vert$k\+G\+A\+I\+Log\+Level\+Verbose$\vert$. \mbox{\Hypertarget{protocol_g_a_i_logger-p_a47771f0b70be428422ea58950f3cc506}\label{protocol_g_a_i_logger-p_a47771f0b70be428422ea58950f3cc506}} 
+\index{G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}!warning\+:@{warning\+:}}
+\index{warning\+:@{warning\+:}!G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}}
+\subsubsection{\texorpdfstring{warning\+:()}{warning:()}}
+{\footnotesize\ttfamily -\/ (void) warning\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Logs message with log level $\vert$k\+G\+A\+I\+Log\+Level\+Warning$\vert$. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{protocol_g_a_i_logger-p_a42c0b17d9224b8a9b02281a3537cded4}\label{protocol_g_a_i_logger-p_a42c0b17d9224b8a9b02281a3537cded4}} 
+\index{G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!G\+A\+I\+Logger-\/p@{G\+A\+I\+Logger-\/p}}
+\subsubsection{\texorpdfstring{log\+Level}{logLevel}}
+{\footnotesize\ttfamily -\/ (G\+A\+I\+Log\+Level) log\+Level\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [required]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Only messages of $\vert$log\+Level$\vert$ and below are logged. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/i\+O\+S/\hyperlink{_g_a_i_logger_8h}{G\+A\+I\+Logger.\+h}\end{DoxyCompactItemize}

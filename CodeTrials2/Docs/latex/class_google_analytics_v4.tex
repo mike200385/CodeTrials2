@@ -1,0 +1,491 @@
+\hypertarget{class_google_analytics_v4}{}\section{Google\+Analytics\+V4 Class Reference}
+\label{class_google_analytics_v4}\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+Inheritance diagram for Google\+Analytics\+V4\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_google_analytics_v4}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Debug\+Mode} \{ \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30dabb1ca97ec761fc37101737ba0aa2e7c5}{Debug\+Mode.\+E\+R\+R\+OR}, 
+\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da059e9861e0400dfbe05c98a841f3f96b}{Debug\+Mode.\+W\+A\+R\+N\+I\+NG}, 
+\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da551b723eafd6a31d444fcb2f5920fbd3}{Debug\+Mode.\+I\+N\+FO}, 
+\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30daec1f06e9fb39c4ef0729b3c7c9c8e8cc}{Debug\+Mode.\+V\+E\+R\+B\+O\+SE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_google_analytics_v4_aa7cf5f1f2b35c21f7f5257df6d016479}{Set\+App\+Level\+Opt\+Out} (bool opt\+Out)
+\item 
+void \hyperlink{class_google_analytics_v4_ace31167ab3826c152ec6662c6cae1115}{Set\+User\+I\+D\+Override} (string user\+ID)
+\item 
+void \hyperlink{class_google_analytics_v4_addf9e233891152323b0ea5062fd8cace}{Clear\+User\+I\+D\+Override} ()
+\item 
+void \hyperlink{class_google_analytics_v4_a3adbcab13c9826a5b887f481cd174a94}{Dispatch\+Hits} ()
+\item 
+void \hyperlink{class_google_analytics_v4_ae0de0ad52c4568e64c3e4a6330cbf5fe}{Start\+Session} ()
+\item 
+void \hyperlink{class_google_analytics_v4_a768198aaf38cbb89d965fffca309dac5}{Stop\+Session} ()
+\item 
+void \hyperlink{class_google_analytics_v4_ad4c84db08e7276957d541c79cea8afde}{Set\+On\+Tracker} (\hyperlink{class_field}{Field} field\+Name, object value)
+\item 
+void \hyperlink{class_google_analytics_v4_a65d8b909078c65dce4555ca37357b27c}{Log\+Screen} (string title)
+\item 
+void \hyperlink{class_google_analytics_v4_a33b365f78d998fb7fa93c3c98862f744}{Log\+Screen} (\hyperlink{class_app_view_hit_builder}{App\+View\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_a98e6990ad085cef4d3f5bf34e84bed13}{Log\+Event} (string event\+Category, string event\+Action, string event\+Label, long value)
+\item 
+void \hyperlink{class_google_analytics_v4_a1166a346068b06b75effe702b1f8bf7c}{Log\+Event} (\hyperlink{class_event_hit_builder}{Event\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_ac0af13f05446b90f661aac9fcf3b0198}{Log\+Transaction} (string trans\+ID, string affiliation, double revenue, double tax, double shipping)
+\item 
+void \hyperlink{class_google_analytics_v4_ab789456e532664b260eaa18d9cef0ad6}{Log\+Transaction} (string trans\+ID, string affiliation, double revenue, double tax, double shipping, string currency\+Code)
+\item 
+void \hyperlink{class_google_analytics_v4_a7001e127fd4b35d28438fa831e8959ec}{Log\+Transaction} (\hyperlink{class_transaction_hit_builder}{Transaction\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_a67f377b324e198df2282a5ccb26954cf}{Log\+Item} (string trans\+ID, string name, string sku, string category, double price, long quantity)
+\item 
+void \hyperlink{class_google_analytics_v4_a6a8737df7f07ee1ecc4690d2ffdb5a37}{Log\+Item} (string trans\+ID, string name, string sku, string category, double price, long quantity, string currency\+Code)
+\item 
+void \hyperlink{class_google_analytics_v4_a6ac7e4060abc667ba60b5c7430260e31}{Log\+Item} (\hyperlink{class_item_hit_builder}{Item\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_ac8b9366bae403679252396d526cf2b75}{Log\+Exception} (string exception\+Description, bool is\+Fatal)
+\item 
+void \hyperlink{class_google_analytics_v4_aa31323ed1960904bf4d224e5802bef3b}{Log\+Exception} (\hyperlink{class_exception_hit_builder}{Exception\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_a1575f8d720332e6c5f39b15331c83896}{Log\+Social} (string social\+Network, string social\+Action, string social\+Target)
+\item 
+void \hyperlink{class_google_analytics_v4_a1d8448a6fd87aebbb6958f2b907c0e64}{Log\+Social} (\hyperlink{class_social_hit_builder}{Social\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_acb3585828e95d3582df1a9ed12780ee1}{Log\+Timing} (string timing\+Category, long timing\+Interval, string timing\+Name, string timing\+Label)
+\item 
+void \hyperlink{class_google_analytics_v4_a857ba35a57e5a32534f5407f52f82019}{Log\+Timing} (\hyperlink{class_timing_hit_builder}{Timing\+Hit\+Builder} builder)
+\item 
+void \hyperlink{class_google_analytics_v4_acde2f7a3194d1155419248307db2ddf3}{Dispose} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_google_analytics_v4_a2636156a1842ec77c486978a3d33d39e}{below\+Threshold} (\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Google\+Analytics\+V4.\+Debug\+Mode} user\+Log\+Level, \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Google\+Analytics\+V4.\+Debug\+Mode} comparelog\+Level)
+\item 
+static \hyperlink{class_google_analytics_v4}{Google\+Analytics\+V4} \hyperlink{class_google_analytics_v4_aa4052b46e75ed98566a2cbef99170667}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_google_analytics_v4_a1c52bd79c88d28dc88b54497a2eb0d69}{android\+Tracking\+Code}
+\item 
+string \hyperlink{class_google_analytics_v4_a87415fc92cb4966dd53507028056b4c2}{I\+O\+S\+Tracking\+Code}
+\item 
+string \hyperlink{class_google_analytics_v4_ad2372f0f31ff1a7c69a721f1e5547788}{other\+Tracking\+Code}
+\item 
+string \hyperlink{class_google_analytics_v4_a0d120870bcfac2f93f347990734e376e}{product\+Name}
+\item 
+string \hyperlink{class_google_analytics_v4_a9fb2933a542f0d9235951bbffc2eeb60}{bundle\+Identifier}
+\item 
+string \hyperlink{class_google_analytics_v4_a410bdabf3b82bff5789e5528fcd0b5ed}{bundle\+Version}
+\item 
+int \hyperlink{class_google_analytics_v4_aa04cf9624fae00ae8800f3d81b6fb10f}{dispatch\+Period} = 5
+\item 
+int \hyperlink{class_google_analytics_v4_a497d47c6dfaa9f9251e253189032dd86}{sample\+Frequency} = 100
+\item 
+\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Debug\+Mode} \hyperlink{class_google_analytics_v4_a9c4ee85167be123b5027d0fa25f35891}{log\+Level} = \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da059e9861e0400dfbe05c98a841f3f96b}{Debug\+Mode.\+W\+A\+R\+N\+I\+NG}
+\item 
+bool \hyperlink{class_google_analytics_v4_ab3f41278a8c7829b332479e0be3090cb}{anonymize\+IP} = false
+\item 
+bool \hyperlink{class_google_analytics_v4_a4ba1da2a054e29b6eccd1e9b67af2c35}{Uncaught\+Exception\+Reporting} = false
+\item 
+bool \hyperlink{class_google_analytics_v4_aa5a1a10589d3589249ce0b187cc822d0}{send\+Launch\+Event} = false
+\item 
+bool \hyperlink{class_google_analytics_v4_a13445aa1c18334f65420c9b0e52d35ed}{dry\+Run} = false
+\item 
+int \hyperlink{class_google_analytics_v4_ac0381b2b4726441019a7e434e01eb698}{session\+Timeout} = 1800
+\item 
+bool \hyperlink{class_google_analytics_v4_ab06f6d44cd37e97e67fa341e5c60693c}{enable\+Ad\+Id} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_google_analytics_v4}{Google\+Analytics\+V4} \hyperlink{class_google_analytics_v4_afc8e694a1f868f6382de7a436c18f177}{instance} = null
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_aa3bd9e3c4319d360ec963529d43b7ec4}{currency\+Symbol} = \char`\"{}U\+SD\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_a3d3a83d85fdb71580903e04ce7030ad4}{E\+V\+E\+N\+T\+\_\+\+H\+IT} = \char`\"{}create\+Event\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_a3ddc4abb51a8d85898933ee3b23e40ab}{A\+P\+P\+\_\+\+V\+I\+EW} = \char`\"{}create\+App\+View\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_a67560f10be0e96061be07c79a156060c}{S\+ET} = \char`\"{}set\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_a9b16ac4148a6ca3a423cfa5fbf718361}{S\+E\+T\+\_\+\+A\+LL} = \char`\"{}set\+All\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_a81d1d9fb0402066d7326c3544535f485}{S\+E\+ND} = \char`\"{}send\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_afbd96028d516bca1f51bd6e01ecfaf65}{I\+T\+E\+M\+\_\+\+H\+IT} = \char`\"{}create\+Item\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_ab312e2bcacd9cff411ecb601d2ed4e3c}{T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT} = \char`\"{}create\+Transaction\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_acd629a2b4e1ed6eaa6ed196b92578d6d}{S\+O\+C\+I\+A\+L\+\_\+\+H\+IT} = \char`\"{}create\+Social\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_ab5c1de675a8c8348cc0aaa88d2f40926}{T\+I\+M\+I\+N\+G\+\_\+\+H\+IT} = \char`\"{}create\+Timing\char`\"{}
+\item 
+static readonly string \hyperlink{class_google_analytics_v4_a436b84e72a3431b0147f409cb1e13e6f}{E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT} = \char`\"{}create\+Exception\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}\label{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Debug\+Mode@{Debug\+Mode}}
+\index{Debug\+Mode@{Debug\+Mode}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Debug\+Mode}{DebugMode}}
+{\footnotesize\ttfamily enum \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Google\+Analytics\+V4.\+Debug\+Mode}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+OR@{E\+R\+R\+OR}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!E\+R\+R\+OR@{E\+R\+R\+OR}}}\mbox{\Hypertarget{class_google_analytics_v4_a53191bc619081f5781932db905fbf30dabb1ca97ec761fc37101737ba0aa2e7c5}\label{class_google_analytics_v4_a53191bc619081f5781932db905fbf30dabb1ca97ec761fc37101737ba0aa2e7c5}} 
+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+A\+R\+N\+I\+NG@{W\+A\+R\+N\+I\+NG}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!W\+A\+R\+N\+I\+NG@{W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da059e9861e0400dfbe05c98a841f3f96b}\label{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da059e9861e0400dfbe05c98a841f3f96b}} 
+W\+A\+R\+N\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+FO@{I\+N\+FO}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!I\+N\+FO@{I\+N\+FO}}}\mbox{\Hypertarget{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da551b723eafd6a31d444fcb2f5920fbd3}\label{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da551b723eafd6a31d444fcb2f5920fbd3}} 
+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}}}\mbox{\Hypertarget{class_google_analytics_v4_a53191bc619081f5781932db905fbf30daec1f06e9fb39c4ef0729b3c7c9c8e8cc}\label{class_google_analytics_v4_a53191bc619081f5781932db905fbf30daec1f06e9fb39c4ef0729b3c7c9c8e8cc}} 
+V\+E\+R\+B\+O\+SE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_google_analytics_v4_a2636156a1842ec77c486978a3d33d39e}\label{class_google_analytics_v4_a2636156a1842ec77c486978a3d33d39e}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!below\+Threshold@{below\+Threshold}}
+\index{below\+Threshold@{below\+Threshold}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{below\+Threshold()}{belowThreshold()}}
+{\footnotesize\ttfamily static bool Google\+Analytics\+V4.\+below\+Threshold (\begin{DoxyParamCaption}\item[{\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Google\+Analytics\+V4.\+Debug\+Mode}}]{user\+Log\+Level,  }\item[{\hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Google\+Analytics\+V4.\+Debug\+Mode}}]{comparelog\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_addf9e233891152323b0ea5062fd8cace}\label{class_google_analytics_v4_addf9e233891152323b0ea5062fd8cace}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Clear\+User\+I\+D\+Override@{Clear\+User\+I\+D\+Override}}
+\index{Clear\+User\+I\+D\+Override@{Clear\+User\+I\+D\+Override}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Clear\+User\+I\+D\+Override()}{ClearUserIDOverride()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Clear\+User\+I\+D\+Override (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a3adbcab13c9826a5b887f481cd174a94}\label{class_google_analytics_v4_a3adbcab13c9826a5b887f481cd174a94}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Dispatch\+Hits@{Dispatch\+Hits}}
+\index{Dispatch\+Hits@{Dispatch\+Hits}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Dispatch\+Hits()}{DispatchHits()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Dispatch\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_acde2f7a3194d1155419248307db2ddf3}\label{class_google_analytics_v4_acde2f7a3194d1155419248307db2ddf3}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_aa4052b46e75ed98566a2cbef99170667}\label{class_google_analytics_v4_aa4052b46e75ed98566a2cbef99170667}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{class_google_analytics_v4}{Google\+Analytics\+V4} Google\+Analytics\+V4.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a98e6990ad085cef4d3f5bf34e84bed13}\label{class_google_analytics_v4_a98e6990ad085cef4d3f5bf34e84bed13}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Event@{Log\+Event}}
+\index{Log\+Event@{Log\+Event}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Event()}{LogEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Event (\begin{DoxyParamCaption}\item[{string}]{event\+Category,  }\item[{string}]{event\+Action,  }\item[{string}]{event\+Label,  }\item[{long}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a1166a346068b06b75effe702b1f8bf7c}\label{class_google_analytics_v4_a1166a346068b06b75effe702b1f8bf7c}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Event@{Log\+Event}}
+\index{Log\+Event@{Log\+Event}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Event()}{LogEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{class_event_hit_builder}{Event\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ac8b9366bae403679252396d526cf2b75}\label{class_google_analytics_v4_ac8b9366bae403679252396d526cf2b75}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Exception@{Log\+Exception}}
+\index{Log\+Exception@{Log\+Exception}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Exception()}{LogException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Exception (\begin{DoxyParamCaption}\item[{string}]{exception\+Description,  }\item[{bool}]{is\+Fatal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_aa31323ed1960904bf4d224e5802bef3b}\label{class_google_analytics_v4_aa31323ed1960904bf4d224e5802bef3b}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Exception@{Log\+Exception}}
+\index{Log\+Exception@{Log\+Exception}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Exception()}{LogException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Exception (\begin{DoxyParamCaption}\item[{\hyperlink{class_exception_hit_builder}{Exception\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a67f377b324e198df2282a5ccb26954cf}\label{class_google_analytics_v4_a67f377b324e198df2282a5ccb26954cf}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Item@{Log\+Item}}
+\index{Log\+Item@{Log\+Item}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Item()}{LogItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Item (\begin{DoxyParamCaption}\item[{string}]{trans\+ID,  }\item[{string}]{name,  }\item[{string}]{sku,  }\item[{string}]{category,  }\item[{double}]{price,  }\item[{long}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a6a8737df7f07ee1ecc4690d2ffdb5a37}\label{class_google_analytics_v4_a6a8737df7f07ee1ecc4690d2ffdb5a37}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Item@{Log\+Item}}
+\index{Log\+Item@{Log\+Item}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Item()}{LogItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Item (\begin{DoxyParamCaption}\item[{string}]{trans\+ID,  }\item[{string}]{name,  }\item[{string}]{sku,  }\item[{string}]{category,  }\item[{double}]{price,  }\item[{long}]{quantity,  }\item[{string}]{currency\+Code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a6ac7e4060abc667ba60b5c7430260e31}\label{class_google_analytics_v4_a6ac7e4060abc667ba60b5c7430260e31}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Item@{Log\+Item}}
+\index{Log\+Item@{Log\+Item}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Item()}{LogItem()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{class_item_hit_builder}{Item\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a65d8b909078c65dce4555ca37357b27c}\label{class_google_analytics_v4_a65d8b909078c65dce4555ca37357b27c}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Screen@{Log\+Screen}}
+\index{Log\+Screen@{Log\+Screen}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Screen()}{LogScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Screen (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a33b365f78d998fb7fa93c3c98862f744}\label{class_google_analytics_v4_a33b365f78d998fb7fa93c3c98862f744}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Screen@{Log\+Screen}}
+\index{Log\+Screen@{Log\+Screen}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Screen()}{LogScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Screen (\begin{DoxyParamCaption}\item[{\hyperlink{class_app_view_hit_builder}{App\+View\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a1575f8d720332e6c5f39b15331c83896}\label{class_google_analytics_v4_a1575f8d720332e6c5f39b15331c83896}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Social@{Log\+Social}}
+\index{Log\+Social@{Log\+Social}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Social()}{LogSocial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Social (\begin{DoxyParamCaption}\item[{string}]{social\+Network,  }\item[{string}]{social\+Action,  }\item[{string}]{social\+Target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a1d8448a6fd87aebbb6958f2b907c0e64}\label{class_google_analytics_v4_a1d8448a6fd87aebbb6958f2b907c0e64}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Social@{Log\+Social}}
+\index{Log\+Social@{Log\+Social}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Social()}{LogSocial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Social (\begin{DoxyParamCaption}\item[{\hyperlink{class_social_hit_builder}{Social\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_acb3585828e95d3582df1a9ed12780ee1}\label{class_google_analytics_v4_acb3585828e95d3582df1a9ed12780ee1}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Timing@{Log\+Timing}}
+\index{Log\+Timing@{Log\+Timing}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Timing()}{LogTiming()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Timing (\begin{DoxyParamCaption}\item[{string}]{timing\+Category,  }\item[{long}]{timing\+Interval,  }\item[{string}]{timing\+Name,  }\item[{string}]{timing\+Label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a857ba35a57e5a32534f5407f52f82019}\label{class_google_analytics_v4_a857ba35a57e5a32534f5407f52f82019}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Timing@{Log\+Timing}}
+\index{Log\+Timing@{Log\+Timing}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Timing()}{LogTiming()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Timing (\begin{DoxyParamCaption}\item[{\hyperlink{class_timing_hit_builder}{Timing\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ac0af13f05446b90f661aac9fcf3b0198}\label{class_google_analytics_v4_ac0af13f05446b90f661aac9fcf3b0198}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Transaction@{Log\+Transaction}}
+\index{Log\+Transaction@{Log\+Transaction}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Transaction()}{LogTransaction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Transaction (\begin{DoxyParamCaption}\item[{string}]{trans\+ID,  }\item[{string}]{affiliation,  }\item[{double}]{revenue,  }\item[{double}]{tax,  }\item[{double}]{shipping }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ab789456e532664b260eaa18d9cef0ad6}\label{class_google_analytics_v4_ab789456e532664b260eaa18d9cef0ad6}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Transaction@{Log\+Transaction}}
+\index{Log\+Transaction@{Log\+Transaction}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Transaction()}{LogTransaction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Transaction (\begin{DoxyParamCaption}\item[{string}]{trans\+ID,  }\item[{string}]{affiliation,  }\item[{double}]{revenue,  }\item[{double}]{tax,  }\item[{double}]{shipping,  }\item[{string}]{currency\+Code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a7001e127fd4b35d28438fa831e8959ec}\label{class_google_analytics_v4_a7001e127fd4b35d28438fa831e8959ec}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Log\+Transaction@{Log\+Transaction}}
+\index{Log\+Transaction@{Log\+Transaction}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Log\+Transaction()}{LogTransaction()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Log\+Transaction (\begin{DoxyParamCaption}\item[{\hyperlink{class_transaction_hit_builder}{Transaction\+Hit\+Builder}}]{builder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_aa7cf5f1f2b35c21f7f5257df6d016479}\label{class_google_analytics_v4_aa7cf5f1f2b35c21f7f5257df6d016479}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Set\+App\+Level\+Opt\+Out@{Set\+App\+Level\+Opt\+Out}}
+\index{Set\+App\+Level\+Opt\+Out@{Set\+App\+Level\+Opt\+Out}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Set\+App\+Level\+Opt\+Out()}{SetAppLevelOptOut()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Set\+App\+Level\+Opt\+Out (\begin{DoxyParamCaption}\item[{bool}]{opt\+Out }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ad4c84db08e7276957d541c79cea8afde}\label{class_google_analytics_v4_ad4c84db08e7276957d541c79cea8afde}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Set\+On\+Tracker@{Set\+On\+Tracker}}
+\index{Set\+On\+Tracker@{Set\+On\+Tracker}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Set\+On\+Tracker()}{SetOnTracker()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Set\+On\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{class_field}{Field}}]{field\+Name,  }\item[{object}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ace31167ab3826c152ec6662c6cae1115}\label{class_google_analytics_v4_ace31167ab3826c152ec6662c6cae1115}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Set\+User\+I\+D\+Override@{Set\+User\+I\+D\+Override}}
+\index{Set\+User\+I\+D\+Override@{Set\+User\+I\+D\+Override}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Set\+User\+I\+D\+Override()}{SetUserIDOverride()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Set\+User\+I\+D\+Override (\begin{DoxyParamCaption}\item[{string}]{user\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ae0de0ad52c4568e64c3e4a6330cbf5fe}\label{class_google_analytics_v4_ae0de0ad52c4568e64c3e4a6330cbf5fe}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Start\+Session@{Start\+Session}}
+\index{Start\+Session@{Start\+Session}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Start\+Session()}{StartSession()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Start\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a768198aaf38cbb89d965fffca309dac5}\label{class_google_analytics_v4_a768198aaf38cbb89d965fffca309dac5}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Stop\+Session@{Stop\+Session}}
+\index{Stop\+Session@{Stop\+Session}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Stop\+Session()}{StopSession()}}
+{\footnotesize\ttfamily void Google\+Analytics\+V4.\+Stop\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_google_analytics_v4_a1c52bd79c88d28dc88b54497a2eb0d69}\label{class_google_analytics_v4_a1c52bd79c88d28dc88b54497a2eb0d69}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!android\+Tracking\+Code@{android\+Tracking\+Code}}
+\index{android\+Tracking\+Code@{android\+Tracking\+Code}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{android\+Tracking\+Code}{androidTrackingCode}}
+{\footnotesize\ttfamily string Google\+Analytics\+V4.\+android\+Tracking\+Code}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ab3f41278a8c7829b332479e0be3090cb}\label{class_google_analytics_v4_ab3f41278a8c7829b332479e0be3090cb}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!anonymize\+IP@{anonymize\+IP}}
+\index{anonymize\+IP@{anonymize\+IP}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{anonymize\+IP}{anonymizeIP}}
+{\footnotesize\ttfamily bool Google\+Analytics\+V4.\+anonymize\+IP = false}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a3ddc4abb51a8d85898933ee3b23e40ab}\label{class_google_analytics_v4_a3ddc4abb51a8d85898933ee3b23e40ab}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!A\+P\+P\+\_\+\+V\+I\+EW@{A\+P\+P\+\_\+\+V\+I\+EW}}
+\index{A\+P\+P\+\_\+\+V\+I\+EW@{A\+P\+P\+\_\+\+V\+I\+EW}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{A\+P\+P\+\_\+\+V\+I\+EW}{APP\_VIEW}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+A\+P\+P\+\_\+\+V\+I\+EW = \char`\"{}create\+App\+View\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a9fb2933a542f0d9235951bbffc2eeb60}\label{class_google_analytics_v4_a9fb2933a542f0d9235951bbffc2eeb60}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!bundle\+Identifier@{bundle\+Identifier}}
+\index{bundle\+Identifier@{bundle\+Identifier}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{bundle\+Identifier}{bundleIdentifier}}
+{\footnotesize\ttfamily string Google\+Analytics\+V4.\+bundle\+Identifier}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a410bdabf3b82bff5789e5528fcd0b5ed}\label{class_google_analytics_v4_a410bdabf3b82bff5789e5528fcd0b5ed}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!bundle\+Version@{bundle\+Version}}
+\index{bundle\+Version@{bundle\+Version}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{bundle\+Version}{bundleVersion}}
+{\footnotesize\ttfamily string Google\+Analytics\+V4.\+bundle\+Version}
+
+\mbox{\Hypertarget{class_google_analytics_v4_aa3bd9e3c4319d360ec963529d43b7ec4}\label{class_google_analytics_v4_aa3bd9e3c4319d360ec963529d43b7ec4}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!currency\+Symbol@{currency\+Symbol}}
+\index{currency\+Symbol@{currency\+Symbol}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{currency\+Symbol}{currencySymbol}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+currency\+Symbol = \char`\"{}U\+SD\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_aa04cf9624fae00ae8800f3d81b6fb10f}\label{class_google_analytics_v4_aa04cf9624fae00ae8800f3d81b6fb10f}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!dispatch\+Period@{dispatch\+Period}}
+\index{dispatch\+Period@{dispatch\+Period}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{dispatch\+Period}{dispatchPeriod}}
+{\footnotesize\ttfamily int Google\+Analytics\+V4.\+dispatch\+Period = 5}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a13445aa1c18334f65420c9b0e52d35ed}\label{class_google_analytics_v4_a13445aa1c18334f65420c9b0e52d35ed}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!dry\+Run@{dry\+Run}}
+\index{dry\+Run@{dry\+Run}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{dry\+Run}{dryRun}}
+{\footnotesize\ttfamily bool Google\+Analytics\+V4.\+dry\+Run = false}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ab06f6d44cd37e97e67fa341e5c60693c}\label{class_google_analytics_v4_ab06f6d44cd37e97e67fa341e5c60693c}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!enable\+Ad\+Id@{enable\+Ad\+Id}}
+\index{enable\+Ad\+Id@{enable\+Ad\+Id}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{enable\+Ad\+Id}{enableAdId}}
+{\footnotesize\ttfamily bool Google\+Analytics\+V4.\+enable\+Ad\+Id = false}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a3d3a83d85fdb71580903e04ce7030ad4}\label{class_google_analytics_v4_a3d3a83d85fdb71580903e04ce7030ad4}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!E\+V\+E\+N\+T\+\_\+\+H\+IT@{E\+V\+E\+N\+T\+\_\+\+H\+IT}}
+\index{E\+V\+E\+N\+T\+\_\+\+H\+IT@{E\+V\+E\+N\+T\+\_\+\+H\+IT}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{E\+V\+E\+N\+T\+\_\+\+H\+IT}{EVENT\_HIT}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+E\+V\+E\+N\+T\+\_\+\+H\+IT = \char`\"{}create\+Event\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a436b84e72a3431b0147f409cb1e13e6f}\label{class_google_analytics_v4_a436b84e72a3431b0147f409cb1e13e6f}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT@{E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT}}
+\index{E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT@{E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT}{EXCEPTION\_HIT}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+IT = \char`\"{}create\+Exception\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_afc8e694a1f868f6382de7a436c18f177}\label{class_google_analytics_v4_afc8e694a1f868f6382de7a436c18f177}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!instance@{instance}}
+\index{instance@{instance}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{class_google_analytics_v4}{Google\+Analytics\+V4} Google\+Analytics\+V4.\+instance = null\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a87415fc92cb4966dd53507028056b4c2}\label{class_google_analytics_v4_a87415fc92cb4966dd53507028056b4c2}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!I\+O\+S\+Tracking\+Code@{I\+O\+S\+Tracking\+Code}}
+\index{I\+O\+S\+Tracking\+Code@{I\+O\+S\+Tracking\+Code}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{I\+O\+S\+Tracking\+Code}{IOSTrackingCode}}
+{\footnotesize\ttfamily string Google\+Analytics\+V4.\+I\+O\+S\+Tracking\+Code}
+
+\mbox{\Hypertarget{class_google_analytics_v4_afbd96028d516bca1f51bd6e01ecfaf65}\label{class_google_analytics_v4_afbd96028d516bca1f51bd6e01ecfaf65}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!I\+T\+E\+M\+\_\+\+H\+IT@{I\+T\+E\+M\+\_\+\+H\+IT}}
+\index{I\+T\+E\+M\+\_\+\+H\+IT@{I\+T\+E\+M\+\_\+\+H\+IT}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{I\+T\+E\+M\+\_\+\+H\+IT}{ITEM\_HIT}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+I\+T\+E\+M\+\_\+\+H\+IT = \char`\"{}create\+Item\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a9c4ee85167be123b5027d0fa25f35891}\label{class_google_analytics_v4_a9c4ee85167be123b5027d0fa25f35891}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{log\+Level}{logLevel}}
+{\footnotesize\ttfamily \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30d}{Debug\+Mode} Google\+Analytics\+V4.\+log\+Level = \hyperlink{class_google_analytics_v4_a53191bc619081f5781932db905fbf30da059e9861e0400dfbe05c98a841f3f96b}{Debug\+Mode.\+W\+A\+R\+N\+I\+NG}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ad2372f0f31ff1a7c69a721f1e5547788}\label{class_google_analytics_v4_ad2372f0f31ff1a7c69a721f1e5547788}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!other\+Tracking\+Code@{other\+Tracking\+Code}}
+\index{other\+Tracking\+Code@{other\+Tracking\+Code}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{other\+Tracking\+Code}{otherTrackingCode}}
+{\footnotesize\ttfamily string Google\+Analytics\+V4.\+other\+Tracking\+Code}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a0d120870bcfac2f93f347990734e376e}\label{class_google_analytics_v4_a0d120870bcfac2f93f347990734e376e}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!product\+Name@{product\+Name}}
+\index{product\+Name@{product\+Name}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{product\+Name}{productName}}
+{\footnotesize\ttfamily string Google\+Analytics\+V4.\+product\+Name}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a497d47c6dfaa9f9251e253189032dd86}\label{class_google_analytics_v4_a497d47c6dfaa9f9251e253189032dd86}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!sample\+Frequency@{sample\+Frequency}}
+\index{sample\+Frequency@{sample\+Frequency}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{sample\+Frequency}{sampleFrequency}}
+{\footnotesize\ttfamily int Google\+Analytics\+V4.\+sample\+Frequency = 100}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a81d1d9fb0402066d7326c3544535f485}\label{class_google_analytics_v4_a81d1d9fb0402066d7326c3544535f485}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!S\+E\+ND@{S\+E\+ND}}
+\index{S\+E\+ND@{S\+E\+ND}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{S\+E\+ND}{SEND}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+S\+E\+ND = \char`\"{}send\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_aa5a1a10589d3589249ce0b187cc822d0}\label{class_google_analytics_v4_aa5a1a10589d3589249ce0b187cc822d0}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!send\+Launch\+Event@{send\+Launch\+Event}}
+\index{send\+Launch\+Event@{send\+Launch\+Event}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{send\+Launch\+Event}{sendLaunchEvent}}
+{\footnotesize\ttfamily bool Google\+Analytics\+V4.\+send\+Launch\+Event = false}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ac0381b2b4726441019a7e434e01eb698}\label{class_google_analytics_v4_ac0381b2b4726441019a7e434e01eb698}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!session\+Timeout@{session\+Timeout}}
+\index{session\+Timeout@{session\+Timeout}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{session\+Timeout}{sessionTimeout}}
+{\footnotesize\ttfamily int Google\+Analytics\+V4.\+session\+Timeout = 1800}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a67560f10be0e96061be07c79a156060c}\label{class_google_analytics_v4_a67560f10be0e96061be07c79a156060c}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!S\+ET@{S\+ET}}
+\index{S\+ET@{S\+ET}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{S\+ET}{SET}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+S\+ET = \char`\"{}set\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a9b16ac4148a6ca3a423cfa5fbf718361}\label{class_google_analytics_v4_a9b16ac4148a6ca3a423cfa5fbf718361}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!S\+E\+T\+\_\+\+A\+LL@{S\+E\+T\+\_\+\+A\+LL}}
+\index{S\+E\+T\+\_\+\+A\+LL@{S\+E\+T\+\_\+\+A\+LL}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+A\+LL}{SET\_ALL}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+S\+E\+T\+\_\+\+A\+LL = \char`\"{}set\+All\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_acd629a2b4e1ed6eaa6ed196b92578d6d}\label{class_google_analytics_v4_acd629a2b4e1ed6eaa6ed196b92578d6d}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!S\+O\+C\+I\+A\+L\+\_\+\+H\+IT@{S\+O\+C\+I\+A\+L\+\_\+\+H\+IT}}
+\index{S\+O\+C\+I\+A\+L\+\_\+\+H\+IT@{S\+O\+C\+I\+A\+L\+\_\+\+H\+IT}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{S\+O\+C\+I\+A\+L\+\_\+\+H\+IT}{SOCIAL\_HIT}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+S\+O\+C\+I\+A\+L\+\_\+\+H\+IT = \char`\"{}create\+Social\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ab5c1de675a8c8348cc0aaa88d2f40926}\label{class_google_analytics_v4_ab5c1de675a8c8348cc0aaa88d2f40926}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!T\+I\+M\+I\+N\+G\+\_\+\+H\+IT@{T\+I\+M\+I\+N\+G\+\_\+\+H\+IT}}
+\index{T\+I\+M\+I\+N\+G\+\_\+\+H\+IT@{T\+I\+M\+I\+N\+G\+\_\+\+H\+IT}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{T\+I\+M\+I\+N\+G\+\_\+\+H\+IT}{TIMING\_HIT}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+T\+I\+M\+I\+N\+G\+\_\+\+H\+IT = \char`\"{}create\+Timing\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_ab312e2bcacd9cff411ecb601d2ed4e3c}\label{class_google_analytics_v4_ab312e2bcacd9cff411ecb601d2ed4e3c}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT@{T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT}}
+\index{T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT@{T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT}{TRANSACTION\_HIT}}
+{\footnotesize\ttfamily readonly string Google\+Analytics\+V4.\+T\+R\+A\+N\+S\+A\+C\+T\+I\+O\+N\+\_\+\+H\+IT = \char`\"{}create\+Transaction\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_google_analytics_v4_a4ba1da2a054e29b6eccd1e9b67af2c35}\label{class_google_analytics_v4_a4ba1da2a054e29b6eccd1e9b67af2c35}} 
+\index{Google\+Analytics\+V4@{Google\+Analytics\+V4}!Uncaught\+Exception\+Reporting@{Uncaught\+Exception\+Reporting}}
+\index{Uncaught\+Exception\+Reporting@{Uncaught\+Exception\+Reporting}!Google\+Analytics\+V4@{Google\+Analytics\+V4}}
+\subsubsection{\texorpdfstring{Uncaught\+Exception\+Reporting}{UncaughtExceptionReporting}}
+{\footnotesize\ttfamily bool Google\+Analytics\+V4.\+Uncaught\+Exception\+Reporting = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Plugins/\+Google\+Analytics\+V4/\hyperlink{_google_analytics_v4_8cs}{Google\+Analytics\+V4.\+cs}\end{DoxyCompactItemize}

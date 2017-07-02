@@ -1,0 +1,579 @@
+\hypertarget{class_global_controller}{}\section{Global\+Controller Class Reference}
+\label{class_global_controller}\index{Global\+Controller@{Global\+Controller}}
+Inheritance diagram for Global\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_global_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_global_controller_a5a71c2551eef6be2304110c96a31cb55}{save\+Player\+Pos} ()
+\begin{DoxyCompactList}\small\item\em save the players position for use between scenes \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a3424caeaad35cc27c958d453ac7586fc}{set\+Player\+Pos} ()
+\begin{DoxyCompactList}\small\item\em sets the players position when returning to scene \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_af0ae9de1725a09bce4a16209a5b638ea}{change\+Scene} (string scene\+Name)
+\begin{DoxyCompactList}\small\item\em changes the scene based on the name \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_af4ff92ac33a69fb09fd302cd775b9e96}{toggle\+Camera} ()
+\begin{DoxyCompactList}\small\item\em toggles between the main camera and the specified second camera \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a58e7beb6be20379f00ed7f63c0a1890a}{change\+Second\+Camera} (Camera new\+Cam)
+\begin{DoxyCompactList}\small\item\em changes the second camera in order to allow togling between multiple camera \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a84e2d66e0c6c9baa79963554f6f3b2bd}{inc\+Scientist} ()
+\begin{DoxyCompactList}\small\item\em Increases the number of scientists. \end{DoxyCompactList}\item 
+int \hyperlink{class_global_controller_aa5e702709ea41c25a8a537556671ff47}{get\+Scientist\+Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of sciensts the player has. \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_afe90e502d26e3585ef975555464bc323}{inc\+Score} ()
+\begin{DoxyCompactList}\small\item\em increases score \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a3c6c2fe54c92b170a0f0cc41c7230a09}{dec\+Score} ()
+\begin{DoxyCompactList}\small\item\em decreases the score \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_afe1a424022cd73ea41fd2385db6a6189}{inc\+Additive} ()
+\begin{DoxyCompactList}\small\item\em increases additive to score \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_aca3ee9a56dbfaeaf1af53422d6afea44}{dec\+Additive} ()
+\begin{DoxyCompactList}\small\item\em decreases additive to score \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a5a65bdfd453a4b0f3a609d02872a2f73}{reset\+Additive} ()
+\begin{DoxyCompactList}\small\item\em resets the additive for the score \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a557ce172d6b9580858646f53c354cfcb}{spawn\+Scientists} ()
+\begin{DoxyCompactList}\small\item\em loads the apt amount of scientists in the final level based on how many were saved \end{DoxyCompactList}\item 
+void \hyperlink{class_global_controller_a8327a637a3ce3e3766e46e449f9218ff}{reset\+When\+Scene\+Changed} ()
+\item 
+void \hyperlink{class_global_controller_a6a9521c88ce33872ebc420e4d8bd5e48}{failure\+Analytics} ()
+\item 
+void \hyperlink{class_global_controller_a001ba1f6e0dab8a0e30efb94b10e926c}{scene\+Timer\+Analytics} ()
+\item 
+void \hyperlink{class_global_controller_a57909fe4f0acecd6591ea7eb119b5512}{scientist\+Analytics} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Google\+Analytics\+V4 \hyperlink{class_global_controller_a07eab03323734ee3d6bb98fbcd74631d}{google\+Analytics}
+\begin{DoxyCompactList}\small\item\em Google Analytics object to manage sending relevant event data. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_a2ba8216c6a7ce8c86fac9109f862f987}{time\+Started}
+\item 
+long \hyperlink{class_global_controller_a62c9cd6f677068c5ee01ee2d111dc1e0}{failed\+Attempts}
+\begin{DoxyCompactList}\small\item\em use for analytics \end{DoxyCompactList}\item 
+Camera \hyperlink{class_global_controller_a5306f034de74eb967dcb2ac69f65dc1b}{main\+Cam}
+\begin{DoxyCompactList}\small\item\em Camera variables. \end{DoxyCompactList}\item 
+Camera \hyperlink{class_global_controller_a5a49301b40b343a34455602a61352f38}{second\+Cam}
+\item 
+bool \hyperlink{class_global_controller_a38a9c134634e25115dbaabe0599402c5}{on\+Main\+Cam}
+\item 
+string \hyperlink{class_global_controller_a9d3bd43867859b70cddd42139c588884}{cam\+Name}
+\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \hyperlink{class_global_controller_a562bed7b82ef0ae6b84ef6bbc061fcd2}{scientist\+Sprites}
+\begin{DoxyCompactList}\small\item\em Final Level Objects. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_adb1a210e3781f70338fb7e41bbf27bf5}{arith\+Complete} = false
+\begin{DoxyCompactList}\small\item\em Check for level Completions. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_ae764fa91d71200973cd4f29027e75882}{cond\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_a5a822475cde64a740d5e956841f3f30c}{array\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_a3d0e1daed25e43680a859ef959ff415d}{loop\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_acfa3a6cc5d553935d62ddff74958a738}{array\+Portal\+Active} = false
+\begin{DoxyCompactList}\small\item\em Teleporter Controller. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_adfcf0fc37bcbdcec0ad7bbe73a1a3f29}{loop\+Portal\+Active} = false
+\item 
+bool \hyperlink{class_global_controller_a3a46793d2eb2610e6271ea910fb7e233}{single\+For\+Loop\+Complete} = false
+\begin{DoxyCompactList}\small\item\em Loop Level Completion Bools. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_a132d355ddde6363fddae3bc4f85b2678}{nested\+For\+Loop\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_a60806c4e71e7aab4127aca365a359b2d}{while\+Loop\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_a9486246c8e066ebc7d21633cba31d6a9}{bool\+Ops\+Complete} = false
+\begin{DoxyCompactList}\small\item\em Conditional Level Completion Bools. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_a2f07e222a9f964dcf7fc1417f715da92}{logical\+Or\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_a8462e396ae3aa7f7616b0f101b5fb89c}{logical\+And\+Complete} = false
+\item 
+bool \hyperlink{class_global_controller_a150accbef592e8c2e099d8b7a109bbc5}{indent\+Complete} = false
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_indent_puzzle}{Indent\+Puzzle} Completion. \end{DoxyCompactList}\item 
+\hyperlink{class_player_movement}{Player\+Movement} \hyperlink{class_global_controller_a801f782511818beca77fc2dbd425408d}{the\+Player}
+\begin{DoxyCompactList}\small\item\em Reference to the Player. \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_global_controller_a7017a9cd75e3d669ccc9750174d054bd}{gl\+Player\+Pos}
+\begin{DoxyCompactList}\small\item\em global player pos for scene transitions -- not used as of now \end{DoxyCompactList}\item 
+Text \hyperlink{class_global_controller_ab792e99bb983f76fdccd852181c5d57a}{score\+Text}
+\begin{DoxyCompactList}\small\item\em text to display score and num of scientists \end{DoxyCompactList}\item 
+int \hyperlink{class_global_controller_aced28959bd33c639a9d5a0d09a402cbf}{score}
+\begin{DoxyCompactList}\small\item\em used to track the player\textquotesingle{}s score \end{DoxyCompactList}\item 
+int \hyperlink{class_global_controller_a48edc8164385a8fc43093ffa9805b3cb}{scientist\+Count}
+\begin{DoxyCompactList}\small\item\em num of scientists \end{DoxyCompactList}\item 
+int \hyperlink{class_global_controller_ad02eba986e29262743629b40f12372e7}{total\+Scientists}
+\begin{DoxyCompactList}\small\item\em max amount of scientists in the game \end{DoxyCompactList}\item 
+int \hyperlink{class_global_controller_a943a3c4c7e4618dbeffb3870d97a0b68}{scr\+Additive}
+\begin{DoxyCompactList}\small\item\em what is added or subtracted from the score \end{DoxyCompactList}\item 
+Text \hyperlink{class_global_controller_a8140e86b843db24566ec5fbf223eeafa}{word\+Display}
+\begin{DoxyCompactList}\small\item\em text for displaying briefings and such \end{DoxyCompactList}\item 
+string \hyperlink{class_global_controller_a4f18181ee209689f12548533bbe5a6a7}{previous\+Scene\+Name}
+\begin{DoxyCompactList}\small\item\em name of last scene that was loaded \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_a9ee52888965cba7e6c237d44e0b19c53}{has\+Bombs}
+\begin{DoxyCompactList}\small\item\em Upgrades for player booleans. \end{DoxyCompactList}\item 
+bool \hyperlink{class_global_controller_ad507e74326e2dc42ce799dba48c27a06}{has\+Double\+Jump}
+\item 
+bool \hyperlink{class_global_controller_ab7b42d69b264a591d1634da4c3d1866f}{has\+Speed\+Up}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_global_controller}{Global\+Controller} \hyperlink{class_global_controller_a1b49b6838d496def8e3968bdd5dc13ae}{Instance}
+\begin{DoxyCompactList}\small\item\em Public instance of the glass to be used in all other classes. \end{DoxyCompactList}\item 
+static float \hyperlink{class_global_controller_a93fd9586e6406cde652c06fda4c4d7be}{timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages all fo the game\textquotesingle{}s persistent data Manages things like\+: Powerups, Google Analytics, Timer for the game, Camera toggles, scientist count, and more 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_global_controller_af0ae9de1725a09bce4a16209a5b638ea}\label{class_global_controller_af0ae9de1725a09bce4a16209a5b638ea}} 
+\index{Global\+Controller@{Global\+Controller}!change\+Scene@{change\+Scene}}
+\index{change\+Scene@{change\+Scene}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{change\+Scene()}{changeScene()}}
+{\footnotesize\ttfamily void Global\+Controller.\+change\+Scene (\begin{DoxyParamCaption}\item[{string}]{scene\+Name }\end{DoxyParamCaption})}
+
+
+
+changes the scene based on the name 
+
+\mbox{\Hypertarget{class_global_controller_a58e7beb6be20379f00ed7f63c0a1890a}\label{class_global_controller_a58e7beb6be20379f00ed7f63c0a1890a}} 
+\index{Global\+Controller@{Global\+Controller}!change\+Second\+Camera@{change\+Second\+Camera}}
+\index{change\+Second\+Camera@{change\+Second\+Camera}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{change\+Second\+Camera()}{changeSecondCamera()}}
+{\footnotesize\ttfamily void Global\+Controller.\+change\+Second\+Camera (\begin{DoxyParamCaption}\item[{Camera}]{new\+Cam }\end{DoxyParamCaption})}
+
+
+
+changes the second camera in order to allow togling between multiple camera 
+
+\mbox{\Hypertarget{class_global_controller_aca3ee9a56dbfaeaf1af53422d6afea44}\label{class_global_controller_aca3ee9a56dbfaeaf1af53422d6afea44}} 
+\index{Global\+Controller@{Global\+Controller}!dec\+Additive@{dec\+Additive}}
+\index{dec\+Additive@{dec\+Additive}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{dec\+Additive()}{decAdditive()}}
+{\footnotesize\ttfamily void Global\+Controller.\+dec\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+decreases additive to score 
+
+\mbox{\Hypertarget{class_global_controller_a3c6c2fe54c92b170a0f0cc41c7230a09}\label{class_global_controller_a3c6c2fe54c92b170a0f0cc41c7230a09}} 
+\index{Global\+Controller@{Global\+Controller}!dec\+Score@{dec\+Score}}
+\index{dec\+Score@{dec\+Score}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{dec\+Score()}{decScore()}}
+{\footnotesize\ttfamily void Global\+Controller.\+dec\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+decreases the score 
+
+\mbox{\Hypertarget{class_global_controller_a6a9521c88ce33872ebc420e4d8bd5e48}\label{class_global_controller_a6a9521c88ce33872ebc420e4d8bd5e48}} 
+\index{Global\+Controller@{Global\+Controller}!failure\+Analytics@{failure\+Analytics}}
+\index{failure\+Analytics@{failure\+Analytics}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{failure\+Analytics()}{failureAnalytics()}}
+{\footnotesize\ttfamily void Global\+Controller.\+failure\+Analytics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_global_controller_aa5e702709ea41c25a8a537556671ff47}\label{class_global_controller_aa5e702709ea41c25a8a537556671ff47}} 
+\index{Global\+Controller@{Global\+Controller}!get\+Scientist\+Count@{get\+Scientist\+Count}}
+\index{get\+Scientist\+Count@{get\+Scientist\+Count}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{get\+Scientist\+Count()}{getScientistCount()}}
+{\footnotesize\ttfamily int Global\+Controller.\+get\+Scientist\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of sciensts the player has. 
+
+\mbox{\Hypertarget{class_global_controller_afe1a424022cd73ea41fd2385db6a6189}\label{class_global_controller_afe1a424022cd73ea41fd2385db6a6189}} 
+\index{Global\+Controller@{Global\+Controller}!inc\+Additive@{inc\+Additive}}
+\index{inc\+Additive@{inc\+Additive}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{inc\+Additive()}{incAdditive()}}
+{\footnotesize\ttfamily void Global\+Controller.\+inc\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+increases additive to score 
+
+\mbox{\Hypertarget{class_global_controller_a84e2d66e0c6c9baa79963554f6f3b2bd}\label{class_global_controller_a84e2d66e0c6c9baa79963554f6f3b2bd}} 
+\index{Global\+Controller@{Global\+Controller}!inc\+Scientist@{inc\+Scientist}}
+\index{inc\+Scientist@{inc\+Scientist}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{inc\+Scientist()}{incScientist()}}
+{\footnotesize\ttfamily void Global\+Controller.\+inc\+Scientist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increases the number of scientists. 
+
+\mbox{\Hypertarget{class_global_controller_afe90e502d26e3585ef975555464bc323}\label{class_global_controller_afe90e502d26e3585ef975555464bc323}} 
+\index{Global\+Controller@{Global\+Controller}!inc\+Score@{inc\+Score}}
+\index{inc\+Score@{inc\+Score}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{inc\+Score()}{incScore()}}
+{\footnotesize\ttfamily void Global\+Controller.\+inc\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+increases score 
+
+\mbox{\Hypertarget{class_global_controller_a5a65bdfd453a4b0f3a609d02872a2f73}\label{class_global_controller_a5a65bdfd453a4b0f3a609d02872a2f73}} 
+\index{Global\+Controller@{Global\+Controller}!reset\+Additive@{reset\+Additive}}
+\index{reset\+Additive@{reset\+Additive}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{reset\+Additive()}{resetAdditive()}}
+{\footnotesize\ttfamily void Global\+Controller.\+reset\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets the additive for the score 
+
+\mbox{\Hypertarget{class_global_controller_a8327a637a3ce3e3766e46e449f9218ff}\label{class_global_controller_a8327a637a3ce3e3766e46e449f9218ff}} 
+\index{Global\+Controller@{Global\+Controller}!reset\+When\+Scene\+Changed@{reset\+When\+Scene\+Changed}}
+\index{reset\+When\+Scene\+Changed@{reset\+When\+Scene\+Changed}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{reset\+When\+Scene\+Changed()}{resetWhenSceneChanged()}}
+{\footnotesize\ttfamily void Global\+Controller.\+reset\+When\+Scene\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the following when the scene is changed Player Main Camera Score Text Scientist Text Word Displayer \mbox{\Hypertarget{class_global_controller_a5a71c2551eef6be2304110c96a31cb55}\label{class_global_controller_a5a71c2551eef6be2304110c96a31cb55}} 
+\index{Global\+Controller@{Global\+Controller}!save\+Player\+Pos@{save\+Player\+Pos}}
+\index{save\+Player\+Pos@{save\+Player\+Pos}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{save\+Player\+Pos()}{savePlayerPos()}}
+{\footnotesize\ttfamily void Global\+Controller.\+save\+Player\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+save the players position for use between scenes 
+
+\mbox{\Hypertarget{class_global_controller_a001ba1f6e0dab8a0e30efb94b10e926c}\label{class_global_controller_a001ba1f6e0dab8a0e30efb94b10e926c}} 
+\index{Global\+Controller@{Global\+Controller}!scene\+Timer\+Analytics@{scene\+Timer\+Analytics}}
+\index{scene\+Timer\+Analytics@{scene\+Timer\+Analytics}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{scene\+Timer\+Analytics()}{sceneTimerAnalytics()}}
+{\footnotesize\ttfamily void Global\+Controller.\+scene\+Timer\+Analytics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_global_controller_a57909fe4f0acecd6591ea7eb119b5512}\label{class_global_controller_a57909fe4f0acecd6591ea7eb119b5512}} 
+\index{Global\+Controller@{Global\+Controller}!scientist\+Analytics@{scientist\+Analytics}}
+\index{scientist\+Analytics@{scientist\+Analytics}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{scientist\+Analytics()}{scientistAnalytics()}}
+{\footnotesize\ttfamily void Global\+Controller.\+scientist\+Analytics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_global_controller_a3424caeaad35cc27c958d453ac7586fc}\label{class_global_controller_a3424caeaad35cc27c958d453ac7586fc}} 
+\index{Global\+Controller@{Global\+Controller}!set\+Player\+Pos@{set\+Player\+Pos}}
+\index{set\+Player\+Pos@{set\+Player\+Pos}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{set\+Player\+Pos()}{setPlayerPos()}}
+{\footnotesize\ttfamily void Global\+Controller.\+set\+Player\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets the players position when returning to scene 
+
+\mbox{\Hypertarget{class_global_controller_a557ce172d6b9580858646f53c354cfcb}\label{class_global_controller_a557ce172d6b9580858646f53c354cfcb}} 
+\index{Global\+Controller@{Global\+Controller}!spawn\+Scientists@{spawn\+Scientists}}
+\index{spawn\+Scientists@{spawn\+Scientists}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{spawn\+Scientists()}{spawnScientists()}}
+{\footnotesize\ttfamily void Global\+Controller.\+spawn\+Scientists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the apt amount of scientists in the final level based on how many were saved 
+
+\mbox{\Hypertarget{class_global_controller_af4ff92ac33a69fb09fd302cd775b9e96}\label{class_global_controller_af4ff92ac33a69fb09fd302cd775b9e96}} 
+\index{Global\+Controller@{Global\+Controller}!toggle\+Camera@{toggle\+Camera}}
+\index{toggle\+Camera@{toggle\+Camera}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{toggle\+Camera()}{toggleCamera()}}
+{\footnotesize\ttfamily void Global\+Controller.\+toggle\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+toggles between the main camera and the specified second camera 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_global_controller_adb1a210e3781f70338fb7e41bbf27bf5}\label{class_global_controller_adb1a210e3781f70338fb7e41bbf27bf5}} 
+\index{Global\+Controller@{Global\+Controller}!arith\+Complete@{arith\+Complete}}
+\index{arith\+Complete@{arith\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{arith\+Complete}{arithComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+arith\+Complete = false}
+
+
+
+Check for level Completions. 
+
+\mbox{\Hypertarget{class_global_controller_a5a822475cde64a740d5e956841f3f30c}\label{class_global_controller_a5a822475cde64a740d5e956841f3f30c}} 
+\index{Global\+Controller@{Global\+Controller}!array\+Complete@{array\+Complete}}
+\index{array\+Complete@{array\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{array\+Complete}{arrayComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+array\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_acfa3a6cc5d553935d62ddff74958a738}\label{class_global_controller_acfa3a6cc5d553935d62ddff74958a738}} 
+\index{Global\+Controller@{Global\+Controller}!array\+Portal\+Active@{array\+Portal\+Active}}
+\index{array\+Portal\+Active@{array\+Portal\+Active}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{array\+Portal\+Active}{arrayPortalActive}}
+{\footnotesize\ttfamily bool Global\+Controller.\+array\+Portal\+Active = false}
+
+
+
+Teleporter Controller. 
+
+\mbox{\Hypertarget{class_global_controller_a9486246c8e066ebc7d21633cba31d6a9}\label{class_global_controller_a9486246c8e066ebc7d21633cba31d6a9}} 
+\index{Global\+Controller@{Global\+Controller}!bool\+Ops\+Complete@{bool\+Ops\+Complete}}
+\index{bool\+Ops\+Complete@{bool\+Ops\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{bool\+Ops\+Complete}{boolOpsComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+bool\+Ops\+Complete = false}
+
+
+
+Conditional Level Completion Bools. 
+
+\mbox{\Hypertarget{class_global_controller_a9d3bd43867859b70cddd42139c588884}\label{class_global_controller_a9d3bd43867859b70cddd42139c588884}} 
+\index{Global\+Controller@{Global\+Controller}!cam\+Name@{cam\+Name}}
+\index{cam\+Name@{cam\+Name}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{cam\+Name}{camName}}
+{\footnotesize\ttfamily string Global\+Controller.\+cam\+Name}
+
+\mbox{\Hypertarget{class_global_controller_ae764fa91d71200973cd4f29027e75882}\label{class_global_controller_ae764fa91d71200973cd4f29027e75882}} 
+\index{Global\+Controller@{Global\+Controller}!cond\+Complete@{cond\+Complete}}
+\index{cond\+Complete@{cond\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{cond\+Complete}{condComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+cond\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_a62c9cd6f677068c5ee01ee2d111dc1e0}\label{class_global_controller_a62c9cd6f677068c5ee01ee2d111dc1e0}} 
+\index{Global\+Controller@{Global\+Controller}!failed\+Attempts@{failed\+Attempts}}
+\index{failed\+Attempts@{failed\+Attempts}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{failed\+Attempts}{failedAttempts}}
+{\footnotesize\ttfamily long Global\+Controller.\+failed\+Attempts}
+
+
+
+use for analytics 
+
+\mbox{\Hypertarget{class_global_controller_a7017a9cd75e3d669ccc9750174d054bd}\label{class_global_controller_a7017a9cd75e3d669ccc9750174d054bd}} 
+\index{Global\+Controller@{Global\+Controller}!gl\+Player\+Pos@{gl\+Player\+Pos}}
+\index{gl\+Player\+Pos@{gl\+Player\+Pos}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{gl\+Player\+Pos}{glPlayerPos}}
+{\footnotesize\ttfamily Vector3 Global\+Controller.\+gl\+Player\+Pos}
+
+
+
+global player pos for scene transitions -- not used as of now 
+
+\mbox{\Hypertarget{class_global_controller_a07eab03323734ee3d6bb98fbcd74631d}\label{class_global_controller_a07eab03323734ee3d6bb98fbcd74631d}} 
+\index{Global\+Controller@{Global\+Controller}!google\+Analytics@{google\+Analytics}}
+\index{google\+Analytics@{google\+Analytics}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{google\+Analytics}{googleAnalytics}}
+{\footnotesize\ttfamily Google\+Analytics\+V4 Global\+Controller.\+google\+Analytics}
+
+
+
+Google Analytics object to manage sending relevant event data. 
+
+\mbox{\Hypertarget{class_global_controller_a9ee52888965cba7e6c237d44e0b19c53}\label{class_global_controller_a9ee52888965cba7e6c237d44e0b19c53}} 
+\index{Global\+Controller@{Global\+Controller}!has\+Bombs@{has\+Bombs}}
+\index{has\+Bombs@{has\+Bombs}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{has\+Bombs}{hasBombs}}
+{\footnotesize\ttfamily bool Global\+Controller.\+has\+Bombs}
+
+
+
+Upgrades for player booleans. 
+
+\mbox{\Hypertarget{class_global_controller_ad507e74326e2dc42ce799dba48c27a06}\label{class_global_controller_ad507e74326e2dc42ce799dba48c27a06}} 
+\index{Global\+Controller@{Global\+Controller}!has\+Double\+Jump@{has\+Double\+Jump}}
+\index{has\+Double\+Jump@{has\+Double\+Jump}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{has\+Double\+Jump}{hasDoubleJump}}
+{\footnotesize\ttfamily bool Global\+Controller.\+has\+Double\+Jump}
+
+\mbox{\Hypertarget{class_global_controller_ab7b42d69b264a591d1634da4c3d1866f}\label{class_global_controller_ab7b42d69b264a591d1634da4c3d1866f}} 
+\index{Global\+Controller@{Global\+Controller}!has\+Speed\+Up@{has\+Speed\+Up}}
+\index{has\+Speed\+Up@{has\+Speed\+Up}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{has\+Speed\+Up}{hasSpeedUp}}
+{\footnotesize\ttfamily bool Global\+Controller.\+has\+Speed\+Up}
+
+\mbox{\Hypertarget{class_global_controller_a150accbef592e8c2e099d8b7a109bbc5}\label{class_global_controller_a150accbef592e8c2e099d8b7a109bbc5}} 
+\index{Global\+Controller@{Global\+Controller}!indent\+Complete@{indent\+Complete}}
+\index{indent\+Complete@{indent\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{indent\+Complete}{indentComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+indent\+Complete = false}
+
+
+
+\hyperlink{class_indent_puzzle}{Indent\+Puzzle} Completion. 
+
+\mbox{\Hypertarget{class_global_controller_a1b49b6838d496def8e3968bdd5dc13ae}\label{class_global_controller_a1b49b6838d496def8e3968bdd5dc13ae}} 
+\index{Global\+Controller@{Global\+Controller}!Instance@{Instance}}
+\index{Instance@{Instance}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \hyperlink{class_global_controller}{Global\+Controller} Global\+Controller.\+Instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Public instance of the glass to be used in all other classes. 
+
+\mbox{\Hypertarget{class_global_controller_a8462e396ae3aa7f7616b0f101b5fb89c}\label{class_global_controller_a8462e396ae3aa7f7616b0f101b5fb89c}} 
+\index{Global\+Controller@{Global\+Controller}!logical\+And\+Complete@{logical\+And\+Complete}}
+\index{logical\+And\+Complete@{logical\+And\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{logical\+And\+Complete}{logicalAndComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+logical\+And\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_a2f07e222a9f964dcf7fc1417f715da92}\label{class_global_controller_a2f07e222a9f964dcf7fc1417f715da92}} 
+\index{Global\+Controller@{Global\+Controller}!logical\+Or\+Complete@{logical\+Or\+Complete}}
+\index{logical\+Or\+Complete@{logical\+Or\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{logical\+Or\+Complete}{logicalOrComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+logical\+Or\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_a3d0e1daed25e43680a859ef959ff415d}\label{class_global_controller_a3d0e1daed25e43680a859ef959ff415d}} 
+\index{Global\+Controller@{Global\+Controller}!loop\+Complete@{loop\+Complete}}
+\index{loop\+Complete@{loop\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{loop\+Complete}{loopComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+loop\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_adfcf0fc37bcbdcec0ad7bbe73a1a3f29}\label{class_global_controller_adfcf0fc37bcbdcec0ad7bbe73a1a3f29}} 
+\index{Global\+Controller@{Global\+Controller}!loop\+Portal\+Active@{loop\+Portal\+Active}}
+\index{loop\+Portal\+Active@{loop\+Portal\+Active}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{loop\+Portal\+Active}{loopPortalActive}}
+{\footnotesize\ttfamily bool Global\+Controller.\+loop\+Portal\+Active = false}
+
+\mbox{\Hypertarget{class_global_controller_a5306f034de74eb967dcb2ac69f65dc1b}\label{class_global_controller_a5306f034de74eb967dcb2ac69f65dc1b}} 
+\index{Global\+Controller@{Global\+Controller}!main\+Cam@{main\+Cam}}
+\index{main\+Cam@{main\+Cam}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{main\+Cam}{mainCam}}
+{\footnotesize\ttfamily Camera Global\+Controller.\+main\+Cam}
+
+
+
+Camera variables. 
+
+\mbox{\Hypertarget{class_global_controller_a132d355ddde6363fddae3bc4f85b2678}\label{class_global_controller_a132d355ddde6363fddae3bc4f85b2678}} 
+\index{Global\+Controller@{Global\+Controller}!nested\+For\+Loop\+Complete@{nested\+For\+Loop\+Complete}}
+\index{nested\+For\+Loop\+Complete@{nested\+For\+Loop\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{nested\+For\+Loop\+Complete}{nestedForLoopComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+nested\+For\+Loop\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_a38a9c134634e25115dbaabe0599402c5}\label{class_global_controller_a38a9c134634e25115dbaabe0599402c5}} 
+\index{Global\+Controller@{Global\+Controller}!on\+Main\+Cam@{on\+Main\+Cam}}
+\index{on\+Main\+Cam@{on\+Main\+Cam}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{on\+Main\+Cam}{onMainCam}}
+{\footnotesize\ttfamily bool Global\+Controller.\+on\+Main\+Cam}
+
+\mbox{\Hypertarget{class_global_controller_a4f18181ee209689f12548533bbe5a6a7}\label{class_global_controller_a4f18181ee209689f12548533bbe5a6a7}} 
+\index{Global\+Controller@{Global\+Controller}!previous\+Scene\+Name@{previous\+Scene\+Name}}
+\index{previous\+Scene\+Name@{previous\+Scene\+Name}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{previous\+Scene\+Name}{previousSceneName}}
+{\footnotesize\ttfamily string Global\+Controller.\+previous\+Scene\+Name}
+
+
+
+name of last scene that was loaded 
+
+\mbox{\Hypertarget{class_global_controller_a48edc8164385a8fc43093ffa9805b3cb}\label{class_global_controller_a48edc8164385a8fc43093ffa9805b3cb}} 
+\index{Global\+Controller@{Global\+Controller}!scientist\+Count@{scientist\+Count}}
+\index{scientist\+Count@{scientist\+Count}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{scientist\+Count}{scientistCount}}
+{\footnotesize\ttfamily int Global\+Controller.\+scientist\+Count}
+
+
+
+num of scientists 
+
+\mbox{\Hypertarget{class_global_controller_a562bed7b82ef0ae6b84ef6bbc061fcd2}\label{class_global_controller_a562bed7b82ef0ae6b84ef6bbc061fcd2}} 
+\index{Global\+Controller@{Global\+Controller}!scientist\+Sprites@{scientist\+Sprites}}
+\index{scientist\+Sprites@{scientist\+Sprites}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{scientist\+Sprites}{scientistSprites}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Global\+Controller.\+scientist\+Sprites}
+
+
+
+Final Level Objects. 
+
+\mbox{\Hypertarget{class_global_controller_aced28959bd33c639a9d5a0d09a402cbf}\label{class_global_controller_aced28959bd33c639a9d5a0d09a402cbf}} 
+\index{Global\+Controller@{Global\+Controller}!score@{score}}
+\index{score@{score}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Global\+Controller.\+score}
+
+
+
+used to track the player\textquotesingle{}s score 
+
+\mbox{\Hypertarget{class_global_controller_ab792e99bb983f76fdccd852181c5d57a}\label{class_global_controller_ab792e99bb983f76fdccd852181c5d57a}} 
+\index{Global\+Controller@{Global\+Controller}!score\+Text@{score\+Text}}
+\index{score\+Text@{score\+Text}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{score\+Text}{scoreText}}
+{\footnotesize\ttfamily Text Global\+Controller.\+score\+Text}
+
+
+
+text to display score and num of scientists 
+
+\mbox{\Hypertarget{class_global_controller_a943a3c4c7e4618dbeffb3870d97a0b68}\label{class_global_controller_a943a3c4c7e4618dbeffb3870d97a0b68}} 
+\index{Global\+Controller@{Global\+Controller}!scr\+Additive@{scr\+Additive}}
+\index{scr\+Additive@{scr\+Additive}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{scr\+Additive}{scrAdditive}}
+{\footnotesize\ttfamily int Global\+Controller.\+scr\+Additive}
+
+
+
+what is added or subtracted from the score 
+
+\mbox{\Hypertarget{class_global_controller_a5a49301b40b343a34455602a61352f38}\label{class_global_controller_a5a49301b40b343a34455602a61352f38}} 
+\index{Global\+Controller@{Global\+Controller}!second\+Cam@{second\+Cam}}
+\index{second\+Cam@{second\+Cam}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{second\+Cam}{secondCam}}
+{\footnotesize\ttfamily Camera Global\+Controller.\+second\+Cam}
+
+\mbox{\Hypertarget{class_global_controller_a3a46793d2eb2610e6271ea910fb7e233}\label{class_global_controller_a3a46793d2eb2610e6271ea910fb7e233}} 
+\index{Global\+Controller@{Global\+Controller}!single\+For\+Loop\+Complete@{single\+For\+Loop\+Complete}}
+\index{single\+For\+Loop\+Complete@{single\+For\+Loop\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{single\+For\+Loop\+Complete}{singleForLoopComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+single\+For\+Loop\+Complete = false}
+
+
+
+Loop Level Completion Bools. 
+
+\mbox{\Hypertarget{class_global_controller_a801f782511818beca77fc2dbd425408d}\label{class_global_controller_a801f782511818beca77fc2dbd425408d}} 
+\index{Global\+Controller@{Global\+Controller}!the\+Player@{the\+Player}}
+\index{the\+Player@{the\+Player}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{the\+Player}{thePlayer}}
+{\footnotesize\ttfamily \hyperlink{class_player_movement}{Player\+Movement} Global\+Controller.\+the\+Player}
+
+
+
+Reference to the Player. 
+
+\mbox{\Hypertarget{class_global_controller_a93fd9586e6406cde652c06fda4c4d7be}\label{class_global_controller_a93fd9586e6406cde652c06fda4c4d7be}} 
+\index{Global\+Controller@{Global\+Controller}!timer@{timer}}
+\index{timer@{timer}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily float Global\+Controller.\+timer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_global_controller_a2ba8216c6a7ce8c86fac9109f862f987}\label{class_global_controller_a2ba8216c6a7ce8c86fac9109f862f987}} 
+\index{Global\+Controller@{Global\+Controller}!time\+Started@{time\+Started}}
+\index{time\+Started@{time\+Started}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{time\+Started}{timeStarted}}
+{\footnotesize\ttfamily bool Global\+Controller.\+time\+Started}
+
+\mbox{\Hypertarget{class_global_controller_ad02eba986e29262743629b40f12372e7}\label{class_global_controller_ad02eba986e29262743629b40f12372e7}} 
+\index{Global\+Controller@{Global\+Controller}!total\+Scientists@{total\+Scientists}}
+\index{total\+Scientists@{total\+Scientists}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{total\+Scientists}{totalScientists}}
+{\footnotesize\ttfamily int Global\+Controller.\+total\+Scientists}
+
+
+
+max amount of scientists in the game 
+
+\mbox{\Hypertarget{class_global_controller_a60806c4e71e7aab4127aca365a359b2d}\label{class_global_controller_a60806c4e71e7aab4127aca365a359b2d}} 
+\index{Global\+Controller@{Global\+Controller}!while\+Loop\+Complete@{while\+Loop\+Complete}}
+\index{while\+Loop\+Complete@{while\+Loop\+Complete}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{while\+Loop\+Complete}{whileLoopComplete}}
+{\footnotesize\ttfamily bool Global\+Controller.\+while\+Loop\+Complete = false}
+
+\mbox{\Hypertarget{class_global_controller_a8140e86b843db24566ec5fbf223eeafa}\label{class_global_controller_a8140e86b843db24566ec5fbf223eeafa}} 
+\index{Global\+Controller@{Global\+Controller}!word\+Display@{word\+Display}}
+\index{word\+Display@{word\+Display}!Global\+Controller@{Global\+Controller}}
+\subsubsection{\texorpdfstring{word\+Display}{wordDisplay}}
+{\footnotesize\ttfamily Text Global\+Controller.\+word\+Display}
+
+
+
+text for displaying briefings and such 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Scripts/\+Persistant\+Data/\hyperlink{_global_controller_8cs}{Global\+Controller.\+cs}\end{DoxyCompactItemize}

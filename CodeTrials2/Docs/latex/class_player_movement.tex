@@ -1,0 +1,257 @@
+\hypertarget{class_player_movement}{}\section{Player\+Movement Class Reference}
+\label{class_player_movement}\index{Player\+Movement@{Player\+Movement}}
+Inheritance diagram for Player\+Movement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_movement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_movement_a4801b0f4bea995d557faf3e0cf004b8b}{zoom\+Out} ()
+\begin{DoxyCompactList}\small\item\em Changes Camera.\+cam ortho size on toggle mapped to \char`\"{}\+Q\char`\"{} key. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_movement_a86dee8b90e483c36b7190c80a53a4163}{zoom\+In} ()
+\begin{DoxyCompactList}\small\item\em Changes Camera.\+cam ortho size on toggle mapped to \char`\"{}\+Q\char`\"{} key. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_movement_a53e0613db4bf57eb5edc2b9dacd7bfe5}{set\+Cam\+Size} (float new\+Cam\+Size)
+\begin{DoxyCompactList}\small\item\em Sets the camera size to the value of the argument. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_movement_abd415fe1fd1e33f5fe5c28fa9ad97399}{go\+To\+Arr\+Platforms} ()
+\begin{DoxyCompactList}\small\item\em Togles camera so player can see platforms in array scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_player_movement_a93207dc2742fe0f0b651a54d610b14aa}{move\+Speed}
+\begin{DoxyCompactList}\small\item\em how fast the player moves \end{DoxyCompactList}\item 
+float \hyperlink{class_player_movement_a0b04326b12b370063895e93d1a20655d}{jump\+Speed}
+\begin{DoxyCompactList}\small\item\em how high player jumps \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_movement_a27276d8e80bcd5acbb70354b06d66841}{is\+Grounded}
+\begin{DoxyCompactList}\small\item\em know if player is on ground \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_movement_a1a59782fc52356398194e29255f1a0ae}{is\+Jumping}
+\begin{DoxyCompactList}\small\item\em know if player is jumping \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_movement_a9be62b9ccfa0da0b71b5247df817fe4b}{left\+Facing} = false
+\begin{DoxyCompactList}\small\item\em Is the player facing left or not. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_movement_a93c85b6422113049146e1d40b215a8e2}{can\+Double\+Jump} = false
+\begin{DoxyCompactList}\small\item\em Can the player jump twice or not. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_movement_acddd245968579989670e4c0953ae2746}{can\+Speed\+Up}
+\begin{DoxyCompactList}\small\item\em Does the player run faster or not. \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_player_movement_a97e6c77c213a7631791776290199d532}{bomb}
+\begin{DoxyCompactList}\small\item\em Test to see if I can get bombs working. \end{DoxyCompactList}\item 
+\hyperlink{classbomb_logic}{bomb\+Logic} \hyperlink{class_player_movement_a5ea646039fd085e5c19acef918f24a21}{timer}
+\begin{DoxyCompactList}\small\item\em Timer for the use of bombs. \end{DoxyCompactList}\item 
+float \hyperlink{class_player_movement_ae6959aebc17336198f7eb270f21e2195}{start\+Time}
+\item 
+Transform \hyperlink{class_player_movement_a4c733d8e1fcc9ffd7223ac3182b380f5}{ground\+Check}
+\begin{DoxyCompactList}\small\item\em variables for checking if player is on ground or not \end{DoxyCompactList}\item 
+float \hyperlink{class_player_movement_a14516da52e9f1e37eea97c98afed9ff3}{ground\+Check\+Radius}
+\begin{DoxyCompactList}\small\item\em radius of ground check space \end{DoxyCompactList}\item 
+Layer\+Mask \hyperlink{class_player_movement_a04b4dc5a83828e9fefcfe8acbf5de276}{what\+Is\+Ground}
+\item 
+bool \hyperlink{class_player_movement_ae0fb74ddab994fb7627c7561629a8982}{zoom} = false
+\begin{DoxyCompactList}\small\item\em flag for using Camera Zoom\+In/\+Out functions. \end{DoxyCompactList}\item 
+Camera \hyperlink{class_player_movement_a345feead60bc04aeb3bf54f198823097}{cam}
+\item 
+\hyperlink{class_global_controller}{Global\+Controller} \hyperlink{class_player_movement_adb2c84510e5bf27967dcff5bdfdf80d4}{game\+Manager}
+\item 
+\hyperlink{class_respawn_controller}{Respawn\+Controller} \hyperlink{class_player_movement_a9669ec66c625ff5409f8fb6be21fef12}{respawn\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_movement_abd415fe1fd1e33f5fe5c28fa9ad97399}\label{class_player_movement_abd415fe1fd1e33f5fe5c28fa9ad97399}} 
+\index{Player\+Movement@{Player\+Movement}!go\+To\+Arr\+Platforms@{go\+To\+Arr\+Platforms}}
+\index{go\+To\+Arr\+Platforms@{go\+To\+Arr\+Platforms}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{go\+To\+Arr\+Platforms()}{goToArrPlatforms()}}
+{\footnotesize\ttfamily void Player\+Movement.\+go\+To\+Arr\+Platforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Togles camera so player can see platforms in array scene. 
+
+\mbox{\Hypertarget{class_player_movement_a53e0613db4bf57eb5edc2b9dacd7bfe5}\label{class_player_movement_a53e0613db4bf57eb5edc2b9dacd7bfe5}} 
+\index{Player\+Movement@{Player\+Movement}!set\+Cam\+Size@{set\+Cam\+Size}}
+\index{set\+Cam\+Size@{set\+Cam\+Size}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{set\+Cam\+Size()}{setCamSize()}}
+{\footnotesize\ttfamily void Player\+Movement.\+set\+Cam\+Size (\begin{DoxyParamCaption}\item[{float}]{new\+Cam\+Size }\end{DoxyParamCaption})}
+
+
+
+Sets the camera size to the value of the argument. 
+
+\mbox{\Hypertarget{class_player_movement_a86dee8b90e483c36b7190c80a53a4163}\label{class_player_movement_a86dee8b90e483c36b7190c80a53a4163}} 
+\index{Player\+Movement@{Player\+Movement}!zoom\+In@{zoom\+In}}
+\index{zoom\+In@{zoom\+In}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{zoom\+In()}{zoomIn()}}
+{\footnotesize\ttfamily void Player\+Movement.\+zoom\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes Camera.\+cam ortho size on toggle mapped to \char`\"{}\+Q\char`\"{} key. 
+
+\mbox{\Hypertarget{class_player_movement_a4801b0f4bea995d557faf3e0cf004b8b}\label{class_player_movement_a4801b0f4bea995d557faf3e0cf004b8b}} 
+\index{Player\+Movement@{Player\+Movement}!zoom\+Out@{zoom\+Out}}
+\index{zoom\+Out@{zoom\+Out}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{zoom\+Out()}{zoomOut()}}
+{\footnotesize\ttfamily void Player\+Movement.\+zoom\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes Camera.\+cam ortho size on toggle mapped to \char`\"{}\+Q\char`\"{} key. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_movement_a97e6c77c213a7631791776290199d532}\label{class_player_movement_a97e6c77c213a7631791776290199d532}} 
+\index{Player\+Movement@{Player\+Movement}!bomb@{bomb}}
+\index{bomb@{bomb}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{bomb}{bomb}}
+{\footnotesize\ttfamily Game\+Object Player\+Movement.\+bomb}
+
+
+
+Test to see if I can get bombs working. 
+
+\mbox{\Hypertarget{class_player_movement_a345feead60bc04aeb3bf54f198823097}\label{class_player_movement_a345feead60bc04aeb3bf54f198823097}} 
+\index{Player\+Movement@{Player\+Movement}!cam@{cam}}
+\index{cam@{cam}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{cam}{cam}}
+{\footnotesize\ttfamily Camera Player\+Movement.\+cam}
+
+\mbox{\Hypertarget{class_player_movement_a93c85b6422113049146e1d40b215a8e2}\label{class_player_movement_a93c85b6422113049146e1d40b215a8e2}} 
+\index{Player\+Movement@{Player\+Movement}!can\+Double\+Jump@{can\+Double\+Jump}}
+\index{can\+Double\+Jump@{can\+Double\+Jump}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{can\+Double\+Jump}{canDoubleJump}}
+{\footnotesize\ttfamily bool Player\+Movement.\+can\+Double\+Jump = false}
+
+
+
+Can the player jump twice or not. 
+
+\mbox{\Hypertarget{class_player_movement_acddd245968579989670e4c0953ae2746}\label{class_player_movement_acddd245968579989670e4c0953ae2746}} 
+\index{Player\+Movement@{Player\+Movement}!can\+Speed\+Up@{can\+Speed\+Up}}
+\index{can\+Speed\+Up@{can\+Speed\+Up}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{can\+Speed\+Up}{canSpeedUp}}
+{\footnotesize\ttfamily bool Player\+Movement.\+can\+Speed\+Up}
+
+
+
+Does the player run faster or not. 
+
+\mbox{\Hypertarget{class_player_movement_adb2c84510e5bf27967dcff5bdfdf80d4}\label{class_player_movement_adb2c84510e5bf27967dcff5bdfdf80d4}} 
+\index{Player\+Movement@{Player\+Movement}!game\+Manager@{game\+Manager}}
+\index{game\+Manager@{game\+Manager}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{game\+Manager}{gameManager}}
+{\footnotesize\ttfamily \hyperlink{class_global_controller}{Global\+Controller} Player\+Movement.\+game\+Manager}
+
+\mbox{\Hypertarget{class_player_movement_a4c733d8e1fcc9ffd7223ac3182b380f5}\label{class_player_movement_a4c733d8e1fcc9ffd7223ac3182b380f5}} 
+\index{Player\+Movement@{Player\+Movement}!ground\+Check@{ground\+Check}}
+\index{ground\+Check@{ground\+Check}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{ground\+Check}{groundCheck}}
+{\footnotesize\ttfamily Transform Player\+Movement.\+ground\+Check}
+
+
+
+variables for checking if player is on ground or not 
+
+\mbox{\Hypertarget{class_player_movement_a14516da52e9f1e37eea97c98afed9ff3}\label{class_player_movement_a14516da52e9f1e37eea97c98afed9ff3}} 
+\index{Player\+Movement@{Player\+Movement}!ground\+Check\+Radius@{ground\+Check\+Radius}}
+\index{ground\+Check\+Radius@{ground\+Check\+Radius}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{ground\+Check\+Radius}{groundCheckRadius}}
+{\footnotesize\ttfamily float Player\+Movement.\+ground\+Check\+Radius}
+
+
+
+radius of ground check space 
+
+\mbox{\Hypertarget{class_player_movement_a27276d8e80bcd5acbb70354b06d66841}\label{class_player_movement_a27276d8e80bcd5acbb70354b06d66841}} 
+\index{Player\+Movement@{Player\+Movement}!is\+Grounded@{is\+Grounded}}
+\index{is\+Grounded@{is\+Grounded}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{is\+Grounded}{isGrounded}}
+{\footnotesize\ttfamily bool Player\+Movement.\+is\+Grounded}
+
+
+
+know if player is on ground 
+
+\mbox{\Hypertarget{class_player_movement_a1a59782fc52356398194e29255f1a0ae}\label{class_player_movement_a1a59782fc52356398194e29255f1a0ae}} 
+\index{Player\+Movement@{Player\+Movement}!is\+Jumping@{is\+Jumping}}
+\index{is\+Jumping@{is\+Jumping}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{is\+Jumping}{isJumping}}
+{\footnotesize\ttfamily bool Player\+Movement.\+is\+Jumping}
+
+
+
+know if player is jumping 
+
+\mbox{\Hypertarget{class_player_movement_a0b04326b12b370063895e93d1a20655d}\label{class_player_movement_a0b04326b12b370063895e93d1a20655d}} 
+\index{Player\+Movement@{Player\+Movement}!jump\+Speed@{jump\+Speed}}
+\index{jump\+Speed@{jump\+Speed}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{jump\+Speed}{jumpSpeed}}
+{\footnotesize\ttfamily float Player\+Movement.\+jump\+Speed}
+
+
+
+how high player jumps 
+
+\mbox{\Hypertarget{class_player_movement_a9be62b9ccfa0da0b71b5247df817fe4b}\label{class_player_movement_a9be62b9ccfa0da0b71b5247df817fe4b}} 
+\index{Player\+Movement@{Player\+Movement}!left\+Facing@{left\+Facing}}
+\index{left\+Facing@{left\+Facing}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{left\+Facing}{leftFacing}}
+{\footnotesize\ttfamily bool Player\+Movement.\+left\+Facing = false}
+
+
+
+Is the player facing left or not. 
+
+\mbox{\Hypertarget{class_player_movement_a93207dc2742fe0f0b651a54d610b14aa}\label{class_player_movement_a93207dc2742fe0f0b651a54d610b14aa}} 
+\index{Player\+Movement@{Player\+Movement}!move\+Speed@{move\+Speed}}
+\index{move\+Speed@{move\+Speed}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{move\+Speed}{moveSpeed}}
+{\footnotesize\ttfamily float Player\+Movement.\+move\+Speed}
+
+
+
+how fast the player moves 
+
+\mbox{\Hypertarget{class_player_movement_a9669ec66c625ff5409f8fb6be21fef12}\label{class_player_movement_a9669ec66c625ff5409f8fb6be21fef12}} 
+\index{Player\+Movement@{Player\+Movement}!respawn\+Manager@{respawn\+Manager}}
+\index{respawn\+Manager@{respawn\+Manager}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{respawn\+Manager}{respawnManager}}
+{\footnotesize\ttfamily \hyperlink{class_respawn_controller}{Respawn\+Controller} Player\+Movement.\+respawn\+Manager}
+
+\mbox{\Hypertarget{class_player_movement_ae6959aebc17336198f7eb270f21e2195}\label{class_player_movement_ae6959aebc17336198f7eb270f21e2195}} 
+\index{Player\+Movement@{Player\+Movement}!start\+Time@{start\+Time}}
+\index{start\+Time@{start\+Time}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{start\+Time}{startTime}}
+{\footnotesize\ttfamily float Player\+Movement.\+start\+Time}
+
+\mbox{\Hypertarget{class_player_movement_a5ea646039fd085e5c19acef918f24a21}\label{class_player_movement_a5ea646039fd085e5c19acef918f24a21}} 
+\index{Player\+Movement@{Player\+Movement}!timer@{timer}}
+\index{timer@{timer}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily \hyperlink{classbomb_logic}{bomb\+Logic} Player\+Movement.\+timer}
+
+
+
+Timer for the use of bombs. 
+
+\mbox{\Hypertarget{class_player_movement_a04b4dc5a83828e9fefcfe8acbf5de276}\label{class_player_movement_a04b4dc5a83828e9fefcfe8acbf5de276}} 
+\index{Player\+Movement@{Player\+Movement}!what\+Is\+Ground@{what\+Is\+Ground}}
+\index{what\+Is\+Ground@{what\+Is\+Ground}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{what\+Is\+Ground}{whatIsGround}}
+{\footnotesize\ttfamily Layer\+Mask Player\+Movement.\+what\+Is\+Ground}
+
+\mbox{\Hypertarget{class_player_movement_ae0fb74ddab994fb7627c7561629a8982}\label{class_player_movement_ae0fb74ddab994fb7627c7561629a8982}} 
+\index{Player\+Movement@{Player\+Movement}!zoom@{zoom}}
+\index{zoom@{zoom}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{zoom}{zoom}}
+{\footnotesize\ttfamily bool Player\+Movement.\+zoom = false}
+
+
+
+flag for using Camera Zoom\+In/\+Out functions. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/kwanholloway/git/5001\+Project/\+Game\+Project/\+Assets/\+Scripts/\+Player/\hyperlink{_player_movement_8cs}{Player\+Movement.\+cs}\end{DoxyCompactItemize}

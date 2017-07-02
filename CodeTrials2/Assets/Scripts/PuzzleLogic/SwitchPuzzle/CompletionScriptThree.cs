@@ -18,8 +18,8 @@ public class CompletionScriptThree : MonoBehaviour {
 
 	public GameObject[] arrayTiles; // the tiles that will be dragged
 	public GameObject[] replacementTiles; //The replacements when tiles dragged into the slots
-	public GameObject arithmeticPortal, conditionalPortal, arrayPortal, loopPortal, finalPortal;//The Portals
-	public GameObject arithLevTag, condLevTag, arrayLevTag, loopLevTag;
+	public GameObject arithmeticPortal;//The Portal
+	public GameObject arithLevTag;
 
 
 	// Use this for initialization
@@ -29,14 +29,8 @@ public class CompletionScriptThree : MonoBehaviour {
 		camToggled = false;
 		scoreChanged = false;
 		arithmeticPortal.SetActive (false);
-		conditionalPortal.SetActive (false);
-		loopPortal.SetActive (false);
-		arrayPortal.SetActive (false);
-		finalPortal.SetActive (false);
 		arithLevTag.SetActive (false);
-		condLevTag.SetActive (false);
-		arrayLevTag.SetActive (false);
-		loopLevTag.SetActive (false);
+
 	}
 	
 	// Update is called once per frame
@@ -58,6 +52,8 @@ public class CompletionScriptThree : MonoBehaviour {
 				}
 		}
 
+		//NOT USED FOR THIS VERSION OF GAME
+		/*
 		//Open Portal to Conditionals
 		if(twoSuccess.success && twoSuccess.giveName == "Replacement2" &&
 			doorNumberSuccess.success && doorNumberSuccess.giveName == "ReplacementdoorNumber" &&
@@ -116,6 +112,7 @@ public class CompletionScriptThree : MonoBehaviour {
 					solved.Play ();
 				}
 		}
+		*/
 
 		//The Reset Logic
 		if (Input.GetKeyDown (KeyCode.R)) {
@@ -133,14 +130,7 @@ public class CompletionScriptThree : MonoBehaviour {
 			camToggled = false;
 			puzzleFinished = false;
 			arithmeticPortal.SetActive (false);
-			conditionalPortal.SetActive (false);
-			loopPortal.SetActive (false);
-			arrayPortal.SetActive (false);
-			finalPortal.SetActive (false);
 			arithLevTag.SetActive (false);
-			condLevTag.SetActive (false);
-			arrayLevTag.SetActive (false);
-			loopLevTag.SetActive (false);
 		}
 	}
 		

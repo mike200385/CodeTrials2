@@ -20,7 +20,7 @@ public class LogicalAndCompletion : MonoBehaviour {
 	public GameObject rightPylonClosed;
 	public GameObject leftPylonRaised;
 	public GameObject rightPylonRaised;
-	public GameObject doorOne;
+	//public GameObject doorOne;
 
 	public AudioSource solved, raisePillarSound, raiseDoor;
 
@@ -41,10 +41,10 @@ public class LogicalAndCompletion : MonoBehaviour {
 		leftPylonFlag = false;
 		rightPylonFlag = false;
 
-		doorOpened = false;
-		doorOneStartingPosition = doorOne.transform.position; //The starting position of the door in the scene
-		doorOneOpenPosition = new Vector3 (doorOne.transform.position.x, doorOne.transform.position.y + 11.0f, 
-			doorOne.transform.position.z);
+		//doorOpened = false;
+		//doorOneStartingPosition = doorOne.transform.position; //The starting position of the door in the scene
+		//doorOneOpenPosition = new Vector3 (doorOne.transform.position.x, doorOne.transform.position.y + 11.0f, 
+			//doorOne.transform.position.z);
 	}
 
 	// Update is called once per frame
@@ -68,6 +68,7 @@ public class LogicalAndCompletion : MonoBehaviour {
 				puzzleFinished = true;
 				solved.Play ();
 				if (!camToggled) {
+					GlobalController.Instance.logicalAndComplete = true;
 					GlobalController.Instance.toggleCamera ();
 					camToggled = true;
 				}
@@ -127,14 +128,14 @@ public class LogicalAndCompletion : MonoBehaviour {
 	}
 
 	void openDoor(){
-		doorOne.transform.position = doorOneOpenPosition;
-		doorOpened = true;
+		//doorOne.transform.position = doorOneOpenPosition;
+		//doorOpened = true;
 	}
 
 	void closeDoor(){
-		doorOne.transform.position = doorOneStartingPosition;
-		raiseDoor.Play ();
-		raiseDoor.loop = false;
+		//doorOne.transform.position = doorOneStartingPosition;
+		//raiseDoor.Play ();
+		//raiseDoor.loop = false;
 	}
 
 	public void resetPylon (){

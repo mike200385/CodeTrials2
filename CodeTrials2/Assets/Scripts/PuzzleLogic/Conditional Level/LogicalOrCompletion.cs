@@ -20,7 +20,7 @@ public class LogicalOrCompletion : MonoBehaviour {
 	public GameObject rightPylonClosed;
 	public GameObject leftPylonRaised;
 	public GameObject rightPylonRaised;
-	public GameObject doorOne;
+	//public GameObject doorOne;
 
 	public AudioSource solved, raisePillarSound, raiseDoor;
 
@@ -42,10 +42,10 @@ public class LogicalOrCompletion : MonoBehaviour {
 		rightPylonFlag = false;
 		scoreChanged = false;
 
-		doorOpened = false;
-		doorOneStartingPosition = doorOne.transform.position; //The starting position of the door in the scene
-		doorOneOpenPosition = new Vector3 (doorOne.transform.position.x, doorOne.transform.position.y + 11.0f, 
-			doorOne.transform.position.z);
+		//doorOpened = false;
+		//doorOneStartingPosition = doorOne.transform.position; //The starting position of the door in the scene
+		//doorOneOpenPosition = new Vector3 (doorOne.transform.position.x, doorOne.transform.position.y + 11.0f, 
+			//doorOne.transform.position.z);
 	}
 
 	// Update is called once per frame
@@ -65,7 +65,7 @@ public class LogicalOrCompletion : MonoBehaviour {
 		if (orSuccess.success && replacementOr.giveName == "ReplacementOR") {
 			if (leftPylonFlag || rightPylonFlag && !doorOpened && trueSuccess.success && falseSuccess.success) {
 				openDoor ();
-
+				GlobalController.Instance.logicalOrComplete = true;
 				puzzleFinished = true;
 				if (!camToggled) {
 					GlobalController.Instance.toggleCamera ();
@@ -129,14 +129,14 @@ public class LogicalOrCompletion : MonoBehaviour {
 	}
 
 	void openDoor(){
-		doorOne.transform.position = doorOneOpenPosition;
-		doorOpened = true;
+		//doorOne.transform.position = doorOneOpenPosition;
+		//doorOpened = true;
 	}
 
 	void closeDoor(){
-		doorOne.transform.position = doorOneStartingPosition;
-		raiseDoor.Play ();
-		raiseDoor.loop = false;
+		//doorOne.transform.position = doorOneStartingPosition;
+		//raiseDoor.Play ();
+		//raiseDoor.loop = false;
 	}
 
 	public void resetPylon (){

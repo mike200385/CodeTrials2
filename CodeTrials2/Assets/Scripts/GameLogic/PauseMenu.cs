@@ -48,14 +48,14 @@ public class PauseMenu : MonoBehaviour {
 				Application.Quit();
 			}
 
-			if(GUI.Button (new Rect(0, 200, buttonWidth, buttonHeight), "Controls")){
-				showControls = true;
-			}
+			//if(GUI.Button (new Rect(0, 200, buttonWidth, buttonHeight), "Controls")){
+			//	showControls = true;
+			//}
 			GUI.EndGroup ();
 
-			if (showControls) {
-				ExtraGUI ();
-			}
+			//if (showControls) {
+			//	ExtraGUI ();
+			//}
 		}
 			
 	}

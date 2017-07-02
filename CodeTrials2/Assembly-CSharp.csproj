@@ -142,6 +142,7 @@
      <Compile Include="Assets\Scripts\levelCompleteArray.cs" />
      <Compile Include="Assets\Scripts\levelCompleteCond.cs" />
      <Compile Include="Assets\Scripts\levelCompleteLoop.cs" />
+     <Compile Include="Assets\ToConditionalLevel.cs" />
      <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
      <None Include="Assets\Plugins\Android\readme.txt" />
  <Reference Include="UnityEngine.UI">

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ReturnToHomePortal : MonoBehaviour {
+public class ToConditionalLevel : MonoBehaviour {
 
 	//public Text prompt; //text to display
 	private bool inArea = false;
@@ -21,8 +21,7 @@ public class ReturnToHomePortal : MonoBehaviour {
 	void Update () {
 		if (inArea) {
 			if (Input.GetKeyDown ("x")) {
-				//SceneManager.LoadScene (currentActiveScene + 1);
-				GlobalController.Instance.changeScene ("HubLevelReturn");
+				SceneManager.LoadScene ("ConditionalLevel");
 			}
 		}
 	}

@@ -62,9 +62,11 @@ public class PlayerMovement : MonoBehaviour {
 		myRigidBody.constraints = RigidbodyConstraints2D.FreezeRotation;
 
 		///if player collected speed up power up
+		/*
 		if (GlobalController.Instance.hasSpeedUp) {
 			moveSpeed = 12.0f;
 		}
+		*/
 
 		//Horizontal input is either 0(no input), 1(going right), or -1(going left)
 
@@ -98,14 +100,18 @@ public class PlayerMovement : MonoBehaviour {
 				myRigidBody.velocity = new Vector3 (myRigidBody.velocity.x, jumpSpeed, 0f);
 				isJumping = true;
 				changeState (STATE_JUMP);
-				canDoubleJump = true;
-			}else{
+				//canDoubleJump = true;
+			}
+
+			/*
+			else{
 				if(canDoubleJump && GlobalController.Instance.hasDoubleJump){
 					canDoubleJump = false;
 					myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpSpeed, 0f);
 					anim.SetBool ("DoubleJump", true);
 				}
 			}
+			*/
 		}
 		// if on the ground, set falling and jumping to false
 		if(isGrounded){ 
@@ -131,6 +137,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		elapsedTime = Time.time - startTime;
 
+		/*
 		if (Input.GetMouseButtonDown (0) && GlobalController.Instance.onMainCam && elapsedTime > 2.0f){
 			if (GlobalController.Instance.hasBombs) {
 				timer.resetTime ();
@@ -144,6 +151,7 @@ public class PlayerMovement : MonoBehaviour {
 				}
 			}
 		}
+		*/
 			
 
 	}

@@ -187,7 +187,7 @@ public class JITScript : MonoBehaviour {
 					"find something cool! Or just hit your head. Only one way to find out!";
 				Time.timeScale = 0.0f;
 				Destroy (this.gameObject);
-				GlobalController.Instance.hasDoubleJump = true;
+				//GlobalController.Instance.hasDoubleJump = true;
 				GlobalController.Instance.incScientist ();
 				playScientistChime ();
 				break;
@@ -200,7 +200,7 @@ public class JITScript : MonoBehaviour {
 				Destroy (this.gameObject);
 				GameObject sci = GameObject.Find ("MidScientist");
 				GlobalController.Instance.incScientist ();
-				GlobalController.Instance.hasSpeedUp = true;
+				//GlobalController.Instance.hasSpeedUp = true;
 				playScientistChime ();
 				Destroy (sci,7.0f);
 				break;
@@ -272,7 +272,7 @@ public class JITScript : MonoBehaviour {
 				Time.timeScale = 0.0f;
 				Destroy (this.gameObject);
 				GlobalController.Instance.incScientist ();
-				GlobalController.Instance.hasBombs = true;
+				//GlobalController.Instance.hasBombs = true;
 				playScientistChime ();
 				break;
 

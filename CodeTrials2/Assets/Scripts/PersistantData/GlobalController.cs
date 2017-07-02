@@ -83,9 +83,9 @@ public class GlobalController : MonoBehaviour {
 	public string previousSceneName;
 
 	///Upgrades for player booleans
-	public bool hasBombs;
-	public bool hasDoubleJump;
-	public bool hasSpeedUp;
+	//public bool hasBombs;
+	//public bool hasDoubleJump;
+	//public bool hasSpeedUp;
 
 	void Awake(){
 		if (Instance == null) {
@@ -112,9 +112,9 @@ public class GlobalController : MonoBehaviour {
 		scoreText.text = "Score: " + score;
 		wordDisplay = GameObject.Find ("WordDisplayer").GetComponent<Text>();
 		previousSceneName = "";
-		hasSpeedUp = false;
-		hasDoubleJump = false;
-		hasBombs = false;
+		//hasSpeedUp = false;
+		//hasDoubleJump = false;
+		//hasBombs = false;
 		timeStarted = true;
 	}
 

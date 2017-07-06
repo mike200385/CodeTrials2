@@ -100,20 +100,17 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.IOSResolver">
- <HintPath>/Users/michaelwilliams/Desktop/CodeTrials2/CodeTrials2/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ <HintPath>/Users/kwanholloway/git/CodeTrials2/CodeTrials2/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
  </Reference>
  <Reference Include="Google.JarResolver">
- <HintPath>/Users/michaelwilliams/Desktop/CodeTrials2/CodeTrials2/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ <HintPath>/Users/kwanholloway/git/CodeTrials2/CodeTrials2/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>/Users/michaelwilliams/Desktop/CodeTrials2/CodeTrials2/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>/Users/kwanholloway/git/CodeTrials2/CodeTrials2/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

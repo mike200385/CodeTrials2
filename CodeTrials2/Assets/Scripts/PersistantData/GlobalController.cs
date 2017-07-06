@@ -104,12 +104,12 @@ public class GlobalController : MonoBehaviour {
 		glPlayerPos = thePlayer.transform.position;
 		onMainCam = true;
 		camName = mainCam.name;
-		score = 0;
+		//score = 0;
 		scientistCount = 0;
 		failedAttempts = 0;
 		totalScientists = 9;
 		scrAdditive = 100;
-		scoreText.text = "Score: " + score;
+		//scoreText.text = "Score: " + score;
 		wordDisplay = GameObject.Find ("WordDisplayer").GetComponent<Text>();
 		previousSceneName = "";
 		//hasSpeedUp = false;
@@ -279,8 +279,8 @@ public class GlobalController : MonoBehaviour {
 		googleAnalytics = GameObject.FindGameObjectWithTag ("ANALYTICS").GetComponent<GoogleAnalyticsV4> ();
 
 		//display that text
-		scoreText.text = "Score: " + score;
-		scientistText.text = "x " + scientistCount;
+		//scoreText.text = "Score: " + score;
+		//scientistText.text = "x " + scientistCount;
 
 		//set failed attempts back to 0 to see how many times per scene the player is failing
 		failedAttempts = 0;

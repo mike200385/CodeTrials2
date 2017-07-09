@@ -132,9 +132,9 @@ public class GlobalController : MonoBehaviour {
 		}
 
 		//constantly update glPlayerPos if not in settings scene
-		if (!SceneManager.GetActiveScene ().name.Equals("Settings")) {
-			savePlayerPos ();
-		}
+//		if (!SceneManager.GetActiveScene ().name.Equals("Settings")) {
+//			savePlayerPos ();
+//		}
 
 		if (timeStarted == true) {
 			timer += Time.deltaTime;

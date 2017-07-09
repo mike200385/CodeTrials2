@@ -342,17 +342,16 @@ public class JITScript : MonoBehaviour {
 				playDialogue ();
 				break;
 			case "FinalCompletion":
-				wordDisplay.text = "You've made it! Thank you so much for rescuing us all!\n" +
+				wordDisplay.text = "You've made it!!\n\n" +
 					"The malware has spread throughout the ship and we can't get it back!\n" +
-					"We're going to eject our escape pod and head back to base. We wouldn't be here without you.\n\n" +
+					"We're going to head back to base.\n\n" +
 					"Thank you a million times!";
 				Time.timeScale = 0.0f;
 				Destroy (this.gameObject);
 				playDialogue ();
 				break;
 			case "FinalBase":
-				wordDisplay.text = "Hey! You must be Codex! Thank's so much for saving the scientists! " +
-					"The scientists were in trouble and you managed to get a lot done.\n\n" +
+				wordDisplay.text = "Hey! You must be Codex!\n\n" +
 					"You learned code!\n" +
 					"Honed your skills!\n" +
 					"And saved the day!\n\n" +
